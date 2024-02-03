@@ -21,8 +21,7 @@ public class LevelSelect : MonoBehaviour
     // Load selected level on button press
     public void LoadLevel()
     {
-        //string selectedLevel = EventSystem.current.currentSelectedGameObject.name;
-        //SceneManager.LoadScene(selectedLevel);
-        SceneManager.LoadScene("0.5");
+        string selectedLevel = EventSystem.current.currentSelectedGameObject.name;
+        SceneManager.LoadScene(selectedLevel);
     }
 }
