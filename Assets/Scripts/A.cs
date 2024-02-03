@@ -1,10 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class LevelSelect : MonoBehaviour
+public class A : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -18,10 +17,9 @@ public class LevelSelect : MonoBehaviour
 
     }
 
-    // Load selected level on button press
-    public void LoadLevel()
+    // Load LevelSelect scene on button press
+    public void LoadLevelSelect()
     {
-        string selectedLevel = EventSystem.current.currentSelectedGameObject.name;
-        SceneManager.LoadScene(selectedLevel);
+        SceneManager.LoadScene("LevelSelect");
     }
 }
