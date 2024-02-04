@@ -6,10 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class LevelSelect : MonoBehaviour
 {
+    public GameObject buttonB;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        // Set button B active if level A is cleared
+        bool clearA = (PlayerPrefs.GetInt("A") != 0);
+        if (clearA)
+        {
+            buttonB.SetActive(true);
+        }
     }
 
     // Update is called once per frame

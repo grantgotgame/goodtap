@@ -20,6 +20,10 @@ public class A : MonoBehaviour
     // Load LevelSelect scene on button press
     public void LoadLevelSelect()
     {
+        // Mark level as complete
+        PlayerPrefs.SetInt("A", 1);
+
+        // Load Level select
         SceneManager.LoadScene("LevelSelect");
     }
 }
