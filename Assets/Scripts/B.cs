@@ -25,6 +25,9 @@ public class B : MonoBehaviour
     {
         //Play a sound
         audioSource.PlayOneShot(good);
+        
+        // Mark level as complete
+        PlayerPrefs.SetInt("B", 1);
 
         StartCoroutine(WaitLoad());
     }
