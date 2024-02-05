@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class C : MonoBehaviour
 {
     private AudioSource audioSource;
-    public AudioClip good;
+    public AudioClip sing_GOOD;
+    public AudioClip sing_TAP;
 
     // Start is called before the first frame update
     void Start()
@@ -20,14 +21,18 @@ public class C : MonoBehaviour
 
     }
 
-    // Do something on button press
-    public void Button()
+    // Sing GOOD and load next button
+    public void ButtonGOOD()
     {
-        //Play a sound
-        audioSource.PlayOneShot(good);
-        
-        // Mark level as complete
-        PlayerPrefs.SetInt("B", 1);
+        // Sing GOOD
+        audioSource.PlayOneShot(sing_GOOD);
+    }
+
+    // Sing TAP and load Level Select
+    public void ButtonTAP()
+    {
+        // Sing TAP
+        audioSource.PlayOneShot(sing_TAP);
 
         StartCoroutine(WaitLoad());
     }
@@ -35,9 +40,12 @@ public class C : MonoBehaviour
     // Wait, then load Level Select
     IEnumerator WaitLoad()
     {
+        // Mark level as complete
+        PlayerPrefs.SetInt("C", 1);
+
         //Wait 1 second
         yield return new WaitForSeconds(1);
-        
+
         // Load level select
         SceneManager.LoadScene("LevelSelect");
     }
