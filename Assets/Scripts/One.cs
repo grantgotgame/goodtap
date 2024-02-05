@@ -7,12 +7,10 @@ public class One : MonoBehaviour
 {
     // Map audio
     private AudioSource audioSource;
-    [SerializeField] AudioClip sing_GOOD;
-    [SerializeField] AudioClip sing_TAP;
+    [SerializeField] AudioClip[] audioClips;
 
     // Map button containers
-    [SerializeField] GameObject container_GOOD;
-    [SerializeField] GameObject container_TAP;
+    [SerializeField] GameObject[] buttonSet1;
 
     // Start is called before the first frame update
     void Start()
@@ -27,42 +25,39 @@ public class One : MonoBehaviour
     }
 
     // Sing GOOD and load next button
-    public void ButtonGOOD()
+    public void ButtonSet1()
     {
         // Sing GOOD
-        audioSource.PlayOneShot(sing_GOOD);
+        //audioSource.PlayOneShot(sing_GOOD);
 
         // Wait 1 second, disable GOOD, enable TAP
-        StartCoroutine(I_GOOD());
+        StartCoroutine(BS1());
     }
 
-    IEnumerator I_GOOD()
+    IEnumerator BS1()
     {
         // Wait 1 second
         yield return new WaitForSeconds(1);
 
         // Disable GOOD
-        container_GOOD.SetActive(false);
+        //container_GOOD.SetActive(false);
 
         // Enable TAP
-        container_TAP.SetActive(true);
+        //container_TAP.SetActive(true);
     }
 
     // Sing TAP and load Level Select
-    public void ButtonTAP()
+    public void CompleteLevel()
     {
-        // Sing TAP
-        audioSource.PlayOneShot(sing_TAP);
+        // Mark level as complete
+        PlayerPrefs.SetInt("One", 1);
 
-        StartCoroutine(WaitLoad());
+        StartCoroutine(WaitQuit());
     }
 
     // Wait, then load Level Select
-    IEnumerator WaitLoad()
+    IEnumerator WaitQuit()
     {
-        // Mark level as complete
-        PlayerPrefs.SetInt("C", 1);
-
         //Wait 1 second
         yield return new WaitForSeconds(1);
 
