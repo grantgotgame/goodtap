@@ -5,9 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class C : MonoBehaviour
 {
+    // Map audio
     private AudioSource audioSource;
-    public AudioClip sing_GOOD;
-    public AudioClip sing_TAP;
+    [SerializeField] AudioClip sing_GOOD;
+    [SerializeField] AudioClip sing_TAP;
+
+    // Map button containers
+    [SerializeField] GameObject container_GOOD;
+    [SerializeField] GameObject container_TAP;
 
     // Start is called before the first frame update
     void Start()

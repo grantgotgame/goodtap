@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 20333987}
   m_Layer: 5
-  m_Name: container
+  m_Name: container_GOOD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -959,7 +959,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1352071242}
   m_Layer: 5
-  m_Name: container (1)
+  m_Name: container_TAP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1267,6 +1267,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sing_GOOD: {fileID: 8300000, guid: fe15d6f3010b56244b67a9d99b35d0d2, type: 3}
   sing_TAP: {fileID: 8300000, guid: 266f782b6c4f686468fbf04566f0085e, type: 3}
+  container_GOOD: {fileID: 20333986}
+  container_TAP: {fileID: 1352071241}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
