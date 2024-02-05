@@ -31,6 +31,21 @@ public class C : MonoBehaviour
     {
         // Sing GOOD
         audioSource.PlayOneShot(sing_GOOD);
+
+        // Wait 1 second, disable GOOD, enable TAP
+        StartCoroutine(I_GOOD());
+    }
+
+    IEnumerator I_GOOD()
+    {
+        // Wait 1 second
+        yield return new WaitForSeconds(1);
+
+        // Disable GOOD
+        container_GOOD.SetActive(false);
+
+        // Enable TAP
+        container_TAP.SetActive(true);
     }
 
     // Sing TAP and load Level Select

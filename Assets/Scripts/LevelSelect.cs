@@ -7,23 +7,15 @@ using UnityEngine.SceneManagement;
 public class LevelSelect : MonoBehaviour
 {
     // Map buttons
-    public GameObject buttonB;
-    public GameObject buttonC;
+    [SerializeField] GameObject buttonB;
+    [SerializeField] GameObject buttonC;
 
     // Start is called before the first frame update
     void Start()
     {
-        // Set button B active if level A is cleared
+        // Set buttons active if levels are cleared
         UnlockIfCleared("A", buttonB);
-        // bool clearA = (PlayerPrefs.GetInt("A") != 0);
-        // if (clearA)
-        // { buttonB.SetActive(true); }
-
-        // Set button C active if level B is cleared
         UnlockIfCleared("B", buttonC);
-        // bool clearB = (PlayerPrefs.GetInt("B") != 0);
-        // if (clearB)
-        // { buttonC.SetActive(true); }
     }
 
     // Update is called once per frame
