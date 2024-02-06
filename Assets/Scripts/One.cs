@@ -31,39 +31,36 @@ public class One : MonoBehaviour
 
     /*
         For each button:
-        - Play audio
-        - Wait 1 second
         - Deactivate button
+        - Play audio
+        - Wait
         - Increment step counter
         - Set next button container active
     */
 
     public void Buttons()
     {
-        // Loop through the array of button sets
-        //for (int = 0; i < buttonSets.Length; int++)
-        {
-            StartCoroutine(IButtons());
-        }
+        StopCoroutine(IButtons());
+        StartCoroutine(IButtons());
     }
 
     IEnumerator IButtons()
     {
         {
+            // Deactivate button
+            buttons[stepCounter].interactable = false;
+
             // Play audio
-            audioSource.PlayOneShot(audioClips[0]);
+            audioSource.PlayOneShot(audioClips[stepCounter]);
 
             // Wait 1 second
-            yield return new WaitForSeconds(1);
-
-            // Deactivate button
-            buttons[0].interactable = false;
+            yield return new WaitForSeconds(0.5f);
 
             // Increment step counter
             stepCounter++;
 
             // Set next button container active
-            buttonContainers[0].SetActive(true);
+            buttonContainers[stepCounter].SetActive(true);
         }
     }
 

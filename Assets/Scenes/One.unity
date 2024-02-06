@@ -715,9 +715,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: C, Assembly-CSharp
-        m_MethodName: ButtonTAP
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: One, Assembly-CSharp
+        m_MethodName: Buttons
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -930,9 +930,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: C, Assembly-CSharp
-        m_MethodName: ButtonTAP
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: One, Assembly-CSharp
+        m_MethodName: Buttons
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -995,7 +995,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &725343048
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1367,9 +1367,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: C, Assembly-CSharp
-        m_MethodName: ButtonTAP
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: One, Assembly-CSharp
+        m_MethodName: Buttons
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1670,7 +1670,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1352071242
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1706,7 +1706,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1477706097
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1742,7 +1742,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1702972760
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1846,9 +1846,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: C, Assembly-CSharp
-        m_MethodName: ButtonTAP
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: One, Assembly-CSharp
+        m_MethodName: Buttons
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
