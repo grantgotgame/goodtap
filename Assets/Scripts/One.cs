@@ -12,7 +12,10 @@ public class One : MonoBehaviour
 
     // Map buttons and their containers
     [SerializeField] Button[] buttons;
-    [SerializeField] GameObject[] buttonSets;
+    [SerializeField] GameObject[] buttonContainers;
+
+    // Counter to track which button is next
+    private int stepCounter = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -31,27 +34,37 @@ public class One : MonoBehaviour
         - Play audio
         - Wait 1 second
         - Deactivate button
+        - Increment step counter
         - Set next button container active
     */
+
     public void Buttons()
     {
-        // Sing GOOD
-        //audioSource.PlayOneShot(sing_GOOD);
-
-        // Wait 1 second, disable GOOD, enable TAP
-        StartCoroutine(IButtons());
+        // Loop through the array of button sets
+        //for (int = 0; i < buttonSets.Length; int++)
+        {
+            StartCoroutine(IButtons());
+        }
     }
 
     IEnumerator IButtons()
     {
-        // Wait 1 second
-        yield return new WaitForSeconds(1);
+        {
+            // Play audio
+            audioSource.PlayOneShot(audioClips[0]);
 
-        // Disable GOOD
-        //container_GOOD.SetActive(false);
+            // Wait 1 second
+            yield return new WaitForSeconds(1);
 
-        // Enable TAP
-        //container_TAP.SetActive(true);
+            // Deactivate button
+            buttons[0].interactable = false;
+
+            // Increment step counter
+            stepCounter++;
+
+            // Set next button container active
+            buttonContainers[0].SetActive(true);
+        }
     }
 
     // Sing TAP and load Level Select
