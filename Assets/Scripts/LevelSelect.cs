@@ -9,6 +9,7 @@ public class LevelSelect : MonoBehaviour
     // Map buttons
     [SerializeField] GameObject buttonB;
     [SerializeField] GameObject buttonC;
+    [SerializeField] GameObject buttonOne;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +17,7 @@ public class LevelSelect : MonoBehaviour
         // Set buttons active if levels are cleared
         UnlockIfCleared("A", buttonB);
         UnlockIfCleared("B", buttonC);
+        UnlockIfCleared("C", buttonOne);
     }
 
     // Update is called once per frame
