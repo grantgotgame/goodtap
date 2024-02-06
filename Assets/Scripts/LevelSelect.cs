@@ -10,6 +10,7 @@ public class LevelSelect : MonoBehaviour
     [SerializeField] GameObject buttonB;
     [SerializeField] GameObject buttonC;
     [SerializeField] GameObject buttonOne;
+    [SerializeField] GameObject buttonTwo;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,7 @@ public class LevelSelect : MonoBehaviour
         UnlockIfCleared("A", buttonB);
         UnlockIfCleared("B", buttonC);
         UnlockIfCleared("C", buttonOne);
+        UnlockIfCleared("One", buttonTwo);
     }
 
     // Update is called once per frame
