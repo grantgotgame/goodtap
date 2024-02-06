@@ -40,7 +40,6 @@ public class One : MonoBehaviour
 
     public void Buttons()
     {
-        StopCoroutine(IButtons());
         StartCoroutine(IButtons());
     }
 
@@ -60,7 +59,11 @@ public class One : MonoBehaviour
             stepCounter++;
 
             // Set next button container active
-            buttonContainers[stepCounter].SetActive(true);
+            if (stepCounter < buttonContainers.Length)
+            { buttonContainers[stepCounter].SetActive(true); }
+
+            // If no more buttons, complete level
+            else { CompleteLevel(); }
         }
     }
 
