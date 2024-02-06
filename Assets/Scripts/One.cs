@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class One : MonoBehaviour
 {
@@ -9,8 +10,9 @@ public class One : MonoBehaviour
     private AudioSource audioSource;
     [SerializeField] AudioClip[] audioClips;
 
-    // Map button containers
-    [SerializeField] GameObject[] buttonSet1;
+    // Map buttons and their containers
+    [SerializeField] Button[] buttons;
+    [SerializeField] GameObject[] buttonSets;
 
     // Start is called before the first frame update
     void Start()
@@ -24,17 +26,23 @@ public class One : MonoBehaviour
 
     }
 
-    // Sing GOOD and load next button
-    public void ButtonSet1()
+    /*
+        For each button:
+        - Play audio
+        - Wait 1 second
+        - Deactivate button
+        - Set next button container active
+    */
+    public void Buttons()
     {
         // Sing GOOD
         //audioSource.PlayOneShot(sing_GOOD);
 
         // Wait 1 second, disable GOOD, enable TAP
-        StartCoroutine(BS1());
+        StartCoroutine(IButtons());
     }
 
-    IEnumerator BS1()
+    IEnumerator IButtons()
     {
         // Wait 1 second
         yield return new WaitForSeconds(1);

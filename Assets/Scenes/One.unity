@@ -715,7 +715,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2105339024}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: C, Assembly-CSharp
         m_MethodName: ButtonTAP
         m_Mode: 1
@@ -930,7 +930,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2105339024}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: C, Assembly-CSharp
         m_MethodName: ButtonTAP
         m_Mode: 1
@@ -1367,7 +1367,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2105339024}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: C, Assembly-CSharp
         m_MethodName: ButtonTAP
         m_Mode: 1
@@ -1468,8 +1468,8 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 2
+  m_ReferenceResolution: {x: 600, y: 800}
+  m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -1513,7 +1513,7 @@ RectTransform:
   m_Children:
   - {fileID: 2105339021}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -39.871}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1846,7 +1846,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2105339024}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: C, Assembly-CSharp
         m_MethodName: ButtonTAP
         m_Mode: 1
@@ -1979,7 +1979,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2105339024}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: C, Assembly-CSharp
         m_MethodName: ButtonGOOD
         m_Mode: 1
@@ -2176,13 +2176,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 2105339020}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 095d5cecb3cdcc64996e2efd54790d6e, type: 3}
+  m_Script: {fileID: 11500000, guid: a9452377840ebf746838732914f5b83d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sing_GOOD: {fileID: 8300000, guid: fe15d6f3010b56244b67a9d99b35d0d2, type: 3}
-  sing_TAP: {fileID: 8300000, guid: 266f782b6c4f686468fbf04566f0085e, type: 3}
-  container_GOOD: {fileID: 20333986}
-  container_TAP: {fileID: 1352071241}
+  audioClips:
+  - {fileID: 8300000, guid: fe15d6f3010b56244b67a9d99b35d0d2, type: 3}
+  - {fileID: 8300000, guid: 266f782b6c4f686468fbf04566f0085e, type: 3}
+  - {fileID: 8300000, guid: 68fa364a31d9f80498a9ffc5fb546e57, type: 3}
+  - {fileID: 8300000, guid: 2561685cae8b37e4381218bb17307e8e, type: 3}
+  - {fileID: 8300000, guid: 9fef7140fb96c644f95e3c343d73104d, type: 3}
+  buttons:
+  - {fileID: 2005257777}
+  - {fileID: 598129119}
+  - {fileID: 1958875197}
+  - {fileID: 763251481}
+  - {fileID: 698060954}
+  buttonSets:
+  - {fileID: 20333986}
+  - {fileID: 1352071241}
+  - {fileID: 725343047}
+  - {fileID: 1477706096}
+  - {fileID: 1702972759}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
