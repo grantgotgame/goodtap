@@ -6,22 +6,28 @@ using UnityEngine.SceneManagement;
 
 public class LevelSelect : MonoBehaviour
 {
-    // Map buttons
+    // Map GameObjects for UnlockIfCleared()
     [SerializeField] GameObject buttonB;
     [SerializeField] GameObject buttonC;
     [SerializeField] GameObject buttonOne;
     [SerializeField] GameObject buttonTwo;
-    [SerializeField] GameObject unlocksTwo;
+    [SerializeField] GameObject stars4;
+    [SerializeField] GameObject buttonThree;
+    [SerializeField] GameObject starThreeYes;
+    [SerializeField] GameObject newLevelText;
 
     // Start is called before the first frame update
     void Start()
     {
-        // Set buttons active if levels are cleared
+        // If levels are cleared, set GameObjects active
         UnlockIfCleared("A", buttonB);
         UnlockIfCleared("B", buttonC);
         UnlockIfCleared("C", buttonOne);
         UnlockIfCleared("One", buttonTwo);
-        UnlockIfCleared("Two", unlocksTwo);
+        UnlockIfCleared("Two", stars4);
+        UnlockIfCleared("Two", buttonThree);
+        UnlockIfCleared("Three", starThreeYes);
+        UnlockIfCleared("Three", newLevelText);
     }
 
     // Update is called once per frame
@@ -37,14 +43,14 @@ public class LevelSelect : MonoBehaviour
         SceneManager.LoadScene(selectedLevel);
     }
 
-    // If levelCleared has been cleared, unlock buttonToUnlock 
-    private void UnlockIfCleared(string levelCleared, GameObject buttonToUnlock)
+    // If levelCleared has been cleared, unlock objectToUnlock 
+    private void UnlockIfCleared(string levelCleared, GameObject objectToUnlock)
     {
         // Check if level has been cleared
         bool clear = (PlayerPrefs.GetInt(levelCleared) != 0);
 
-        //Unlock button if level has been cleared
+        //Unlock objectToUnlock if level has been cleared
         if (clear)
-        { buttonToUnlock.SetActive(true); }
+        { objectToUnlock.SetActive(true); }
     }
 }
