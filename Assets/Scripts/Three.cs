@@ -72,7 +72,7 @@ public class Three : MonoBehaviour
     public void CompleteLevel()
     {
         // Mark level as complete
-        PlayerPrefs.SetInt("Two", 1);
+        PlayerPrefs.SetInt("Three", 1);
 
         StartCoroutine(WaitQuit());
     }
