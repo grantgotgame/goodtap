@@ -3132,8 +3132,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Two, Assembly-CSharp
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: Three, Assembly-CSharp
         m_MethodName: ButtonsGreen
         m_Mode: 1
         m_Arguments:

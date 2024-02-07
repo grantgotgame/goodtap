@@ -18,6 +18,9 @@ public class Three : MonoBehaviour
     // Counter to track which button is next
     private int stepCounter = 0;
 
+    // String to track script name for CompleteLevel function
+    private string scriptName;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -72,8 +75,8 @@ public class Three : MonoBehaviour
     public void CompleteLevel()
     {
         // Mark level as complete
-        PlayerPrefs.SetInt("Three", 1);
-
+        scriptName = this.GetType().Name;
+        PlayerPrefs.SetInt(scriptName, 1);
         StartCoroutine(WaitQuit());
     }
 
