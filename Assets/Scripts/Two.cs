@@ -8,11 +8,11 @@ public class Two : MonoBehaviour
 {
     // Map audio
     private AudioSource audioSource;
-    [SerializeField] AudioClip[] audioClips;
+    [SerializeField] AudioClip[] greenAudio;
 
     // Map buttons and their containers
-    [SerializeField] Button[] buttons;
-    [SerializeField] GameObject[] buttonContainers;
+    [SerializeField] GameObject[] greenButtons;
+    [SerializeField] GameObject[] yellowButtons;
 
     // Counter to track which button is next
     private int stepCounter = 0;
