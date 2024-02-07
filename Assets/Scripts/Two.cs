@@ -8,11 +8,12 @@ public class Two : MonoBehaviour
 {
     // Map audio
     private AudioSource audioSource;
-    [SerializeField] AudioClip[] greenAudio;
+    [SerializeField] AudioClip[] audioGreen;
+    [SerializeField] AudioClip[] audioYellow;
 
     // Map buttons and their containers
-    [SerializeField] GameObject[] greenButtons;
-    [SerializeField] GameObject[] yellowButtons;
+    [SerializeField] GameObject[] buttonsGreen;
+    [SerializeField] GameObject[] buttonsYellow;
 
     // Counter to track which button is next
     private int stepCounter = 0;
@@ -38,19 +39,19 @@ public class Two : MonoBehaviour
         - Set next button container active
     */
 
-    public void Buttons()
+    public void ButtonsGreen()
     {
-        StartCoroutine(IButtons());
+        StartCoroutine(IButtonsGreen());
     }
 
-    IEnumerator IButtons()
+    IEnumerator IButtonsGreen()
     {
         {
             // Deactivate button
-            buttons[stepCounter].interactable = false;
+            buttonsGreen[stepCounter].GetComponent<Button>().interactable = false;
 
             // Play audio
-            audioSource.PlayOneShot(audioClips[stepCounter]);
+            audioSource.PlayOneShot(audioGreen[stepCounter]);
 
             // Wait 1 second
             yield return new WaitForSeconds(0.5f);
@@ -58,16 +59,16 @@ public class Two : MonoBehaviour
             // Increment step counter
             stepCounter++;
 
-            // Set next button container active
-            if (stepCounter < buttonContainers.Length)
-            { buttonContainers[stepCounter].SetActive(true); }
+            // Set next button active
+            if (stepCounter < buttonsGreen.Length)
+            { buttonsGreen[stepCounter].SetActive(true); }
 
             // If no more buttons, complete level
             else { CompleteLevel(); }
         }
     }
 
-    // Sing TAP and load Level Select
+    // Mark level complete and load Level Select
     public void CompleteLevel()
     {
         // Mark level as complete
