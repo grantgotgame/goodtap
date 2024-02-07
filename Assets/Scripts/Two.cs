@@ -72,7 +72,7 @@ public class Two : MonoBehaviour
     public void CompleteLevel()
     {
         // Mark level as complete
-        PlayerPrefs.SetInt("One", 1);
+        PlayerPrefs.SetInt("Two", 1);
 
         StartCoroutine(WaitQuit());
     }
