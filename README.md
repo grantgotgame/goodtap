@@ -1,2 +1,2 @@
 # goodtap
- good tap
+ good tap for secret messages

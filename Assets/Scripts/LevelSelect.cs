@@ -11,7 +11,7 @@ public class LevelSelect : MonoBehaviour
     [SerializeField] GameObject buttonC;
     [SerializeField] GameObject buttonOne;
     [SerializeField] GameObject buttonTwo;
-    [SerializeField] GameObject stars4;
+    [SerializeField] GameObject stars5;
     [SerializeField] GameObject buttonThree;
     [SerializeField] GameObject starThreeYes;
     [SerializeField] GameObject newLevelText;
@@ -24,9 +24,9 @@ public class LevelSelect : MonoBehaviour
         UnlockIfCleared("B", buttonC);
         UnlockIfCleared("C", buttonOne);
         UnlockIfCleared("One", buttonTwo);
-        UnlockIfCleared("Two", stars4);
+        UnlockIfCleared("Two", stars5);
         UnlockIfCleared("Two", buttonThree);
-        UnlockIfCleared("Three", starThreeYes);
+        UnlockIfCleared("ThreeStarGreen", starThreeYes);
         UnlockIfCleared("Three", newLevelText);
     }
 

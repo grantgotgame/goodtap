@@ -16,7 +16,8 @@ public class Three : MonoBehaviour
     [SerializeField] GameObject[] buttonsYellow;
 
     // Counter to track which button is next
-    private int stepCounter = 0;
+    private int stepCounterGreen = 0;
+    private int stepCounterYellow = 0;
 
     // String to track script name for CompleteLevel function
     private string scriptName;
@@ -24,7 +25,11 @@ public class Three : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Map audio source
         audioSource = GetComponent<AudioSource>();
+
+        // Map script name
+        scriptName = this.GetType().Name;
     }
 
     // Update is called once per frame
@@ -51,20 +56,55 @@ public class Three : MonoBehaviour
     {
         {
             // Deactivate button
-            buttonsGreen[stepCounter].GetComponent<Button>().interactable = false;
+            buttonsGreen[stepCounterGreen].GetComponent<Button>().interactable = false;
 
             // Play audio
-            audioSource.PlayOneShot(audioGreen[stepCounter]);
+            audioSource.PlayOneShot(audioGreen[stepCounterGreen]);
 
             // Wait 1 second
             yield return new WaitForSeconds(0.5f);
 
             // Increment step counter
-            stepCounter++;
+            stepCounterGreen++;
 
             // Set next button active
-            if (stepCounter < buttonsGreen.Length)
-            { buttonsGreen[stepCounter].SetActive(true); }
+            if (stepCounterGreen < buttonsGreen.Length)
+            { buttonsGreen[stepCounterGreen].SetActive(true); }
+
+            // If no more buttons, complete level
+            else
+            {
+                // Award green star
+                PlayerPrefs.SetInt(scriptName + "StarGreen", 1);
+
+                CompleteLevel();
+            }
+        }
+    }
+
+    public void ButtonsYellow()
+    {
+        StartCoroutine(IButtonsYellow());
+    }
+
+    IEnumerator IButtonsYellow()
+    {
+        {
+            // Deactivate button
+            buttonsYellow[stepCounterYellow].GetComponent<Button>().interactable = false;
+
+            // Play audio
+            audioSource.PlayOneShot(audioYellow[stepCounterYellow]);
+
+            // Wait 1 second
+            yield return new WaitForSeconds(0.5f);
+
+            // Increment step counter
+            stepCounterYellow++;
+
+            // Set next button active
+            if (stepCounterYellow < buttonsYellow.Length)
+            { buttonsYellow[stepCounterYellow].SetActive(true); }
 
             // If no more buttons, complete level
             else { CompleteLevel(); }
@@ -75,7 +115,6 @@ public class Three : MonoBehaviour
     public void CompleteLevel()
     {
         // Mark level as complete
-        scriptName = this.GetType().Name;
         PlayerPrefs.SetInt(scriptName, 1);
         StartCoroutine(WaitQuit());
     }
