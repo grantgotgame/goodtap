@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Thats.unity
     guid: d170df0a164a51b45895d0e659041b99
+  - enabled: 1
+    path: Assets/Scenes/How.unity
+    guid: b73314b521272bc408a42e5b68691d46
   m_configObjects: {}
