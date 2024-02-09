@@ -10,14 +10,17 @@ public class Thats : MonoBehaviour
     private AudioSource audioSource;
     [SerializeField] AudioClip[] audioGreen;
     [SerializeField] AudioClip[] audioYellow;
+    [SerializeField] AudioClip[] audioRed;
 
     // Map buttons and their containers
     [SerializeField] GameObject[] buttonsGreen;
     [SerializeField] GameObject[] buttonsYellow;
+    [SerializeField] GameObject[] buttonsRed;
 
     // Counter to track which button is next
     private int stepCounterGreen = 0;
     private int stepCounterYellow = 0;
+    private int stepCounterRed = 0;
 
     // String to track script name for CompleteLevel function
     private string scriptName;
@@ -108,6 +111,41 @@ public class Thats : MonoBehaviour
 
             // If no more buttons, complete level
             else { CompleteLevel(); }
+        }
+    }
+
+    public void ButtonsRed()
+    {
+        StartCoroutine(IButtonsRed());
+    }
+
+    IEnumerator IButtonsRed()
+    {
+        {
+            // Deactivate button
+            buttonsRed[stepCounterRed].GetComponent<Button>().interactable = false;
+
+            // Play audio
+            audioSource.PlayOneShot(audioRed[stepCounterRed]);
+
+            // Wait 1 second
+            yield return new WaitForSeconds(0.25f);
+
+            // Increment step counter
+            stepCounterRed++;
+
+            // Set next button active
+            if (stepCounterRed < buttonsRed.Length)
+            { buttonsRed[stepCounterRed].SetActive(true); }
+
+            // If no more buttons, complete level
+            else
+            {
+                // Award red star
+                PlayerPrefs.SetInt(scriptName + "StarRed", 1);
+
+                CompleteLevel();
+            }
         }
     }
 

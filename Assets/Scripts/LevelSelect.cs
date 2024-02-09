@@ -30,6 +30,8 @@ public class LevelSelect : MonoBehaviour
         UnlockIfCleared("Two", buttonThree);
         UnlockIfCleared("ThreeStarGreen", starThreeYes);
         UnlockIfCleared("Three", buttonThats);
+        UnlockIfCleared("ThatsStarRed", starThatsYes);
+        UnlockIfCleared("Thats", newLevelText);
     }
 
     // Update is called once per frame
