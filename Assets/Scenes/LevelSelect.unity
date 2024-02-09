@@ -1822,6 +1822,10 @@ MonoBehaviour:
   starThreeYes: {fileID: 1118509080}
   buttonThats: {fileID: 625219263}
   starThatsYes: {fileID: 495978348}
+  buttonHow: {fileID: 1816066504}
+  starHowGreenYes: {fileID: 936238855}
+  starHowYellowYes: {fileID: 497194343}
+  starHowRedYes: {fileID: 1021353538}
   newLevelText: {fileID: 410430934}
 --- !u!1 &899403016
 GameObject:

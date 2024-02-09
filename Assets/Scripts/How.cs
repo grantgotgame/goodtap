@@ -110,7 +110,14 @@ public class How : MonoBehaviour
             { buttonsYellow[stepCounterYellow].SetActive(true); }
 
             // If no more buttons, complete level
-            else { CompleteLevel(); }
+            else
+            {
+                // Award yellow star if victory conditions are met
+                if (stepCounterGreen == 2 && stepCounterRed == 3)
+                { PlayerPrefs.SetInt(scriptName + "StarYellow", 1); }
+
+                CompleteLevel();
+            }
         }
     }
 

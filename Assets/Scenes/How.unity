@@ -340,8 +340,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Thats, Assembly-CSharp
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: How, Assembly-CSharp
         m_MethodName: ButtonsRed
         m_Mode: 1
         m_Arguments:
@@ -1009,8 +1009,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Thats, Assembly-CSharp
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: How, Assembly-CSharp
         m_MethodName: ButtonsRed
         m_Mode: 1
         m_Arguments:
@@ -1142,8 +1142,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Thats, Assembly-CSharp
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: How, Assembly-CSharp
         m_MethodName: ButtonsYellow
         m_Mode: 1
         m_Arguments:
@@ -1484,8 +1484,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Thats, Assembly-CSharp
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: How, Assembly-CSharp
         m_MethodName: ButtonsRed
         m_Mode: 1
         m_Arguments:
@@ -1617,8 +1617,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Thats, Assembly-CSharp
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: How, Assembly-CSharp
         m_MethodName: ButtonsRed
         m_Mode: 1
         m_Arguments:
@@ -1884,8 +1884,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Thats, Assembly-CSharp
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: How, Assembly-CSharp
         m_MethodName: ButtonsYellow
         m_Mode: 1
         m_Arguments:
@@ -2490,8 +2490,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Thats, Assembly-CSharp
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: How, Assembly-CSharp
         m_MethodName: ButtonsRed
         m_Mode: 1
         m_Arguments:
@@ -2839,8 +2839,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Three, Assembly-CSharp
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: How, Assembly-CSharp
         m_MethodName: ButtonsGreen
         m_Mode: 1
         m_Arguments:
@@ -2972,8 +2972,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Thats, Assembly-CSharp
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: How, Assembly-CSharp
         m_MethodName: ButtonsRed
         m_Mode: 1
         m_Arguments:
@@ -3239,8 +3239,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Thats, Assembly-CSharp
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: How, Assembly-CSharp
         m_MethodName: ButtonsYellow
         m_Mode: 1
         m_Arguments:
@@ -3506,8 +3506,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Thats, Assembly-CSharp
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: How, Assembly-CSharp
         m_MethodName: ButtonsRed
         m_Mode: 1
         m_Arguments:
@@ -3639,8 +3639,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Three, Assembly-CSharp
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: How, Assembly-CSharp
         m_MethodName: ButtonsGreen
         m_Mode: 1
         m_Arguments:
@@ -3906,8 +3906,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Three, Assembly-CSharp
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: How, Assembly-CSharp
         m_MethodName: ButtonsGreen
         m_Mode: 1
         m_Arguments:
@@ -4544,8 +4544,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Thats, Assembly-CSharp
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: How, Assembly-CSharp
         m_MethodName: ButtonsYellow
         m_Mode: 1
         m_Arguments:
@@ -4811,8 +4811,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Thats, Assembly-CSharp
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: How, Assembly-CSharp
         m_MethodName: ButtonsYellow
         m_Mode: 1
         m_Arguments:
@@ -5346,8 +5346,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Thats, Assembly-CSharp
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: How, Assembly-CSharp
         m_MethodName: ButtonsRed
         m_Mode: 1
         m_Arguments:
@@ -5747,8 +5747,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Thats, Assembly-CSharp
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: How, Assembly-CSharp
         m_MethodName: ButtonsRed
         m_Mode: 1
         m_Arguments:
@@ -5880,8 +5880,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Thats, Assembly-CSharp
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: How, Assembly-CSharp
         m_MethodName: ButtonsYellow
         m_Mode: 1
         m_Arguments:
@@ -6013,8 +6013,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Thats, Assembly-CSharp
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: How, Assembly-CSharp
         m_MethodName: ButtonsRed
         m_Mode: 1
         m_Arguments:
@@ -6414,8 +6414,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Thats, Assembly-CSharp
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: How, Assembly-CSharp
         m_MethodName: ButtonsRed
         m_Mode: 1
         m_Arguments:
@@ -6681,8 +6681,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Thats, Assembly-CSharp
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: How, Assembly-CSharp
         m_MethodName: ButtonsYellow
         m_Mode: 1
         m_Arguments:
@@ -6814,8 +6814,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Thats, Assembly-CSharp
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: How, Assembly-CSharp
         m_MethodName: ButtonsRed
         m_Mode: 1
         m_Arguments:
@@ -6947,8 +6947,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Thats, Assembly-CSharp
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: How, Assembly-CSharp
         m_MethodName: ButtonsRed
         m_Mode: 1
         m_Arguments:
@@ -7080,8 +7080,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Thats, Assembly-CSharp
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: How, Assembly-CSharp
         m_MethodName: ButtonsYellow
         m_Mode: 1
         m_Arguments:
@@ -7300,12 +7300,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d78b3f9b89b3314b9c539434779a8b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioGreen: []
-  audioYellow: []
-  audioRed: []
-  buttonsGreen: []
-  buttonsYellow: []
-  buttonsRed: []
+  audioGreen:
+  - {fileID: 8300000, guid: 1e522a40b1ff54742b9c45f7ce12072a, type: 3}
+  - {fileID: 8300000, guid: 9969db880b9f06945a9b79b84477ff36, type: 3}
+  - {fileID: 8300000, guid: b36a2bfa20c9139478e9176dfd23974d, type: 3}
+  audioYellow:
+  - {fileID: 8300000, guid: 19aae716eb06e1144bbb6744fa327fc5, type: 3}
+  - {fileID: 8300000, guid: 7c917655a5e7485489210dbcde67dcdd, type: 3}
+  - {fileID: 8300000, guid: 95bae4bfe20050d41a2d1092edcb79b5, type: 3}
+  - {fileID: 8300000, guid: 8ff618ac2ea10e24983c7b96d7ab17af, type: 3}
+  - {fileID: 8300000, guid: b9df732ad99541c4d95415ea99d5d45f, type: 3}
+  - {fileID: 8300000, guid: 5d41025ceb716684faf1fe2c7aafc379, type: 3}
+  - {fileID: 8300000, guid: 0660eb3f179ab6741add279423b040b0, type: 3}
+  - {fileID: 8300000, guid: 63288004d3d33e142a21ec0146165d5c, type: 3}
+  audioRed:
+  - {fileID: 8300000, guid: 45be7bc6c48f4d34483a274b9ff0a5c9, type: 3}
+  - {fileID: 8300000, guid: ab46c75f544012f4f88ce32491b92153, type: 3}
+  - {fileID: 8300000, guid: 9fd4666a0d1f73d4cbf52d4de77116ac, type: 3}
+  - {fileID: 8300000, guid: 63aef33388b18034c8898c4924df6dde, type: 3}
+  - {fileID: 8300000, guid: 280012932ba1b454c8b69024f18289cd, type: 3}
+  - {fileID: 8300000, guid: 1e522a40b1ff54742b9c45f7ce12072a, type: 3}
+  - {fileID: 8300000, guid: b36a2bfa20c9139478e9176dfd23974d, type: 3}
+  - {fileID: 8300000, guid: 7c917655a5e7485489210dbcde67dcdd, type: 3}
+  - {fileID: 8300000, guid: 95bae4bfe20050d41a2d1092edcb79b5, type: 3}
+  - {fileID: 8300000, guid: 45be7bc6c48f4d34483a274b9ff0a5c9, type: 3}
+  - {fileID: 8300000, guid: ab46c75f544012f4f88ce32491b92153, type: 3}
+  - {fileID: 8300000, guid: 63aef33388b18034c8898c4924df6dde, type: 3}
+  - {fileID: 8300000, guid: 280012932ba1b454c8b69024f18289cd, type: 3}
+  - {fileID: 8300000, guid: 9f33a65cd9b17c543aa0df5fa7cb6018, type: 3}
+  buttonsGreen:
+  - {fileID: 893988376}
+  - {fileID: 835785910}
+  - {fileID: 640893621}
+  buttonsYellow:
+  - {fileID: 1366258429}
+  - {fileID: 1110364860}
+  - {fileID: 736187045}
+  - {fileID: 389566775}
+  - {fileID: 268029522}
+  - {fileID: 2099997480}
+  - {fileID: 1831175116}
+  - {fileID: 1948192997}
+  buttonsRed:
+  - {fileID: 2005257775}
+  - {fileID: 598129117}
+  - {fileID: 1958875195}
+  - {fileID: 763251479}
+  - {fileID: 698060952}
+  - {fileID: 1859868366}
+  - {fileID: 350560670}
+  - {fileID: 1544589324}
+  - {fileID: 2143099937}
+  - {fileID: 17170926}
+  - {fileID: 178632329}
+  - {fileID: 1902532056}
+  - {fileID: 315183255}
+  - {fileID: 1771302740}
 --- !u!1 &2143099937
 GameObject:
   m_ObjectHideFlags: 0
@@ -7389,8 +7439,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Thats, Assembly-CSharp
+      - m_Target: {fileID: 2105339024}
+        m_TargetAssemblyTypeName: How, Assembly-CSharp
         m_MethodName: ButtonsRed
         m_Mode: 1
         m_Arguments:
