@@ -1669,6 +1669,8 @@ MonoBehaviour:
   stars5: {fileID: 132222777}
   buttonThree: {fileID: 931961326}
   starThreeYes: {fileID: 1118509080}
+  buttonThats: {fileID: 625219263}
+  starThatsYes: {fileID: 495978348}
   newLevelText: {fileID: 410430934}
 --- !u!1 &899403016
 GameObject:
