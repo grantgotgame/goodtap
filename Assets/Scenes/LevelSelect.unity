@@ -2320,6 +2320,10 @@ MonoBehaviour:
   starHowGreenYes: {fileID: 936238855}
   starHowYellowYes: {fileID: 497194343}
   starHowRedYes: {fileID: 1021353538}
+  buttonEasy: {fileID: 976084598}
+  starEasyGreenYes: {fileID: 421400250}
+  starEasyYellowYes: {fileID: 917709049}
+  starEasyRedYes: {fileID: 441272583}
   newLevelText: {fileID: 410430934}
 --- !u!114 &880897701
 MonoBehaviour:

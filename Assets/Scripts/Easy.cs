@@ -62,7 +62,7 @@ public class Easy : MonoBehaviour
             buttonsGreen[stepCounterGreen].GetComponent<Button>().interactable = false;
 
             // Play audio
-            audioSource.PlayOneShot(audioGreen[stepCounterGreen]);
+            //audioSource.PlayOneShot(audioGreen[stepCounterGreen]);
 
             // Wait 1 second
             yield return new WaitForSeconds(0.5f);
@@ -97,7 +97,7 @@ public class Easy : MonoBehaviour
             buttonsYellow[stepCounterYellow].GetComponent<Button>().interactable = false;
 
             // Play audio
-            audioSource.PlayOneShot(audioYellow[stepCounterYellow]);
+            //audioSource.PlayOneShot(audioYellow[stepCounterYellow]);
 
             // Wait 1 second
             yield return new WaitForSeconds(0.5f);
@@ -113,7 +113,6 @@ public class Easy : MonoBehaviour
             else
             {
                 // Award yellow star if victory conditions are met
-                if (stepCounterGreen == 2 && stepCounterRed == 3)
                 { PlayerPrefs.SetInt(scriptName + "StarYellow", 1); }
 
                 CompleteLevel();
@@ -133,7 +132,7 @@ public class Easy : MonoBehaviour
             buttonsRed[stepCounterRed].GetComponent<Button>().interactable = false;
 
             // Play audio
-            audioSource.PlayOneShot(audioRed[stepCounterRed]);
+            //audioSource.PlayOneShot(audioRed[stepCounterRed]);
 
             // Wait 1 second
             yield return new WaitForSeconds(0.25f);
