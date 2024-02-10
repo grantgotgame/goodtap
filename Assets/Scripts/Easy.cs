@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
+using TMPro;
 
 public class Easy : MonoBehaviour
 {
@@ -25,6 +27,13 @@ public class Easy : MonoBehaviour
     // String to track script name for CompleteLevel function
     private string scriptName;
 
+    // Variables for Bork() script
+    private Bork bork;
+    private TMP_Text m_TextComponent;
+    private Transform m_Transform;
+    private string buttonText;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +42,9 @@ public class Easy : MonoBehaviour
 
         // Map script name
         scriptName = this.GetType().Name;
+
+        // Find Bork script
+        bork = GameObject.Find("buttons").GetComponent<Bork>();
     }
 
     // Update is called once per frame
@@ -58,11 +70,12 @@ public class Easy : MonoBehaviour
     IEnumerator IButtonsGreen()
     {
         {
+            // Play audio
+            buttonText = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<TMP_Text>().text;
+            bork.BorkWord(buttonText);
+
             // Deactivate button
             buttonsGreen[stepCounterGreen].GetComponent<Button>().interactable = false;
-
-            // Play audio
-            //audioSource.PlayOneShot(audioGreen[stepCounterGreen]);
 
             // Wait 1 second
             yield return new WaitForSeconds(0.5f);
@@ -72,7 +85,10 @@ public class Easy : MonoBehaviour
 
             // Set next button active
             if (stepCounterGreen < buttonsGreen.Length)
-            { buttonsGreen[stepCounterGreen].SetActive(true); }
+            {
+                buttonsGreen[stepCounterGreen].SetActive(true);
+                buttonsGreen[stepCounterGreen].GetComponent<Button>().interactable = true;
+            }
 
             // If no more buttons, complete level
             else

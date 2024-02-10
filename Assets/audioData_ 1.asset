@@ -15,3 +15,10 @@ MonoBehaviour:
   b_bork:
   - {fileID: 8300000, guid: d80eb839e262ecd458a63f72a910b8a2, type: 3}
   - {fileID: 8300000, guid: dcc19d47664f492438cac6cb84e69343, type: 3}
+  b_IS:
+  - {fileID: 8300000, guid: 91cbc820030462845b3188be7c634a01, type: 3}
+  - {fileID: 8300000, guid: 94d0c7c63f363e245a989707e97cfc91, type: 3}
+  b_GREEN:
+  - {fileID: 8300000, guid: 73e7e52fee6544046a5687ca646a49fd, type: 3}
+  - {fileID: 8300000, guid: 5410398e11436c3468a0fbcbf2e5d46f, type: 3}
+  - {fileID: 8300000, guid: 28d5ebd7f5cbf964fb6269b14ce40ac6, type: 3}
