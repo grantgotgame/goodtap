@@ -11,8 +11,9 @@ public class Bork : MonoBehaviour
     // Create arrays for audio clips
     [SerializeField] private AudioData bork;
 
-    // Counter for Bork functions
+    // Variables for Bork functions
     private int borkNumber = 0;
+    [SerializeField] private GameObject doggoWithHeadphones;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +37,9 @@ public class Bork : MonoBehaviour
 
         // Mark doggo as borked
         PlayerPrefs.SetInt("BorkCount", PlayerPrefs.GetInt("BorkCount") + 1);
+
+        // Toggle headphones
+        doggoWithHeadphones.SetActive(!doggoWithHeadphones.activeInHierarchy);
     }
 
     // Sing or whisper on button press
