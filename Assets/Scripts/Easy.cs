@@ -137,6 +137,10 @@ public class Easy : MonoBehaviour
 
     public void ButtonsRed()
     {
+        // Play audio
+        buttonText = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<TMP_Text>().text;
+        bork.BorkWord(buttonText);
+
         StartCoroutine(IButtonsRed());
     }
 
@@ -145,9 +149,6 @@ public class Easy : MonoBehaviour
         {
             // Deactivate button
             buttonsRed[stepCounterRed].GetComponent<Button>().interactable = false;
-
-            // Play audio
-            //audioSource.PlayOneShot(audioRed[stepCounterRed]);
 
             // Wait 1 second
             yield return new WaitForSeconds(0.25f);
