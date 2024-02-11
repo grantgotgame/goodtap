@@ -66,7 +66,6 @@ public class Easy : MonoBehaviour
     {
         // Play audio
         buttonText = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<TMP_Text>().text;
-        Debug.Log(buttonText);
         bork.BorkWord(buttonText);
 
         // Deactivate button

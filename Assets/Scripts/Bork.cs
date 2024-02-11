@@ -31,8 +31,8 @@ public class Bork : MonoBehaviour
     public void BorkBork()
     {
         //Play a random bork sound
-        borkNumber = Random.Range(0, bork.B_bork.Length);
-        audioSource.PlayOneShot(bork.B_bork[borkNumber]);
+        borkNumber = Random.Range(0, bork.B_Bork.Length);
+        audioSource.PlayOneShot(bork.B_Bork[borkNumber]);
 
         // Mark doggo as borked
         PlayerPrefs.SetInt("BorkCount", PlayerPrefs.GetInt("BorkCount") + 1);
@@ -41,9 +41,43 @@ public class Bork : MonoBehaviour
     // Sing or whisper on button press
     public void BorkWord(string word)
     {
-        // Bork a random sound
-        borkNumber = Random.Range(0, bork.B_GREEN.Length);
-        Debug.Log(word);
-        audioSource.PlayOneShot(bork.B_GREEN[borkNumber]);
+
+        // Map bork library - bork random sound
+
+        if (word == "EASY")
+        {
+            borkNumber = Random.Range(0, bork.B_EASY.Length);
+            audioSource.PlayOneShot(bork.B_EASY[borkNumber]);
+        }
+
+        if (word == "GREEN")
+        {
+            borkNumber = Random.Range(0, bork.B_GREEN.Length);
+            audioSource.PlayOneShot(bork.B_GREEN[borkNumber]);
+        }
+
+        if (word == "IS")
+        {
+            borkNumber = Random.Range(0, bork.B_IS.Length);
+            audioSource.PlayOneShot(bork.B_IS[borkNumber]);
+        }
+
+        if (word == "RED")
+        {
+            borkNumber = Random.Range(0, bork.B_RED.Length);
+            audioSource.PlayOneShot(bork.B_RED[borkNumber]);
+        }
+
+        if (word == "THIS")
+        {
+            borkNumber = Random.Range(0, bork.B_THIS.Length);
+            audioSource.PlayOneShot(bork.B_THIS[borkNumber]);
+        }
+
+        if (word == "TIME")
+        {
+            borkNumber = Random.Range(0, bork.B_TIME.Length);
+            audioSource.PlayOneShot(bork.B_TIME[borkNumber]);
+        }
     }
 }
