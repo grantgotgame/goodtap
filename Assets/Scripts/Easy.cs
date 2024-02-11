@@ -102,6 +102,10 @@ public class Easy : MonoBehaviour
 
     public void ButtonsYellow()
     {
+        // Play audio
+        buttonText = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<TMP_Text>().text;
+        bork.BorkWord(buttonText);
+
         StartCoroutine(IButtonsYellow());
     }
 
@@ -110,9 +114,6 @@ public class Easy : MonoBehaviour
         {
             // Deactivate button
             buttonsYellow[stepCounterYellow].GetComponent<Button>().interactable = false;
-
-            // Play audio
-            //audioSource.PlayOneShot(audioYellow[stepCounterYellow]);
 
             // Wait 1 second
             yield return new WaitForSeconds(0.5f);
@@ -128,6 +129,7 @@ public class Easy : MonoBehaviour
             else
             {
                 // Award yellow star if victory conditions are met
+                if (stepCounterGreen == 0 && stepCounterRed == 0)
                 { PlayerPrefs.SetInt(scriptName + "StarYellow", 1); }
 
                 CompleteLevel();
