@@ -64,20 +64,20 @@ public class Easy : MonoBehaviour
 
     public void ButtonsGreen()
     {
+        // Play audio
+        buttonText = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<TMP_Text>().text;
+        Debug.Log(buttonText);
+        bork.BorkWord(buttonText);
+
+        // Deactivate button
+        buttonsGreen[stepCounterGreen].GetComponent<Button>().interactable = false;
+
         StartCoroutine(IButtonsGreen());
     }
 
     IEnumerator IButtonsGreen()
     {
-        {
-            // Play audio
-            buttonText = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<TMP_Text>().text;
-            bork.BorkWord(buttonText);
-
-            // Deactivate button
-            buttonsGreen[stepCounterGreen].GetComponent<Button>().interactable = false;
-
-            // Wait 1 second
+        {// Wait 1 second
             yield return new WaitForSeconds(0.5f);
 
             // Increment step counter

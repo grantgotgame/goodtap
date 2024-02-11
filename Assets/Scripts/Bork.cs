@@ -11,6 +11,9 @@ public class Bork : MonoBehaviour
     // Create arrays for audio clips
     [SerializeField] private AudioData bork;
 
+    // Counter for Bork functions
+    private int borkNumber = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +31,7 @@ public class Bork : MonoBehaviour
     public void BorkBork()
     {
         //Play a random bork sound
-        int borkNumber = Random.Range(0, bork.B_bork.Length);
+        borkNumber = Random.Range(0, bork.B_bork.Length);
         audioSource.PlayOneShot(bork.B_bork[borkNumber]);
 
         // Mark doggo as borked
@@ -39,7 +42,8 @@ public class Bork : MonoBehaviour
     public void BorkWord(string word)
     {
         // Bork a random sound
-        int borkNumber = Random.Range(0, bork.B_IS.Length);
-        audioSource.PlayOneShot(bork.B_IS[borkNumber]);
+        borkNumber = Random.Range(0, bork.B_GREEN.Length);
+        Debug.Log(word);
+        audioSource.PlayOneShot(bork.B_GREEN[borkNumber]);
     }
 }

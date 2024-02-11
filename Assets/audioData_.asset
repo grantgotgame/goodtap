@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f4f13a27e0477c4b838481e155dcc05, type: 3}
-  m_Name: audioData_ 1
+  m_Name: audioData_
   m_EditorClassIdentifier: 
   b_bork:
   - {fileID: 8300000, guid: d80eb839e262ecd458a63f72a910b8a2, type: 3}
@@ -22,3 +22,5 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 73e7e52fee6544046a5687ca646a49fd, type: 3}
   - {fileID: 8300000, guid: 5410398e11436c3468a0fbcbf2e5d46f, type: 3}
   - {fileID: 8300000, guid: 28d5ebd7f5cbf964fb6269b14ce40ac6, type: 3}
+  b_EASY:
+  - {fileID: 8300000, guid: 488276571a429d049bf2d58b221fbb3f, type: 3}

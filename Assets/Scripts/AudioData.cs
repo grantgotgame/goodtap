@@ -12,6 +12,8 @@ public class AudioData : ScriptableObject
     public AudioClip[] B_IS => b_IS;
     [SerializeField] private AudioClip[] b_GREEN;
     public AudioClip[] B_GREEN => b_GREEN;
+    [SerializeField] private AudioClip[] b_EASY;
+    public AudioClip[] B_EASY => b_EASY;
     // Start is called before the first frame update
     void Start()
     {
