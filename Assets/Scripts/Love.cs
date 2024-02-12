@@ -211,7 +211,7 @@ public class Love : MonoBehaviour
     IEnumerator WaitQuit()
     {
         //Wait 1 second
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
 
         // Load level select
         SceneManager.LoadScene("LevelSelect");
