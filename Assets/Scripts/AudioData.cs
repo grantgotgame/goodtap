@@ -8,6 +8,8 @@ public class AudioData : ScriptableObject
     // Map audio data words
     [SerializeField] private AudioClip[] b_anne;
     public AudioClip[] B_anne => b_anne;
+    [SerializeField] private AudioClip[] b_beware;
+    public AudioClip[] B_beware => b_beware;
     [SerializeField] private AudioClip[] b_BIG;
     public AudioClip[] B_BIG => b_BIG;
     [SerializeField] private AudioClip[] b_Bork;
@@ -46,6 +48,8 @@ public class AudioData : ScriptableObject
     public AudioClip[] B_is => b_is;
     [SerializeField] private AudioClip[] b_LIKE;
     public AudioClip[] B_LIKE => b_LIKE;
+    [SerializeField] private AudioClip[] b_LOVE;
+    public AudioClip[] B_LOVE => b_LOVE;
     [SerializeField] private AudioClip[] b_love;
     public AudioClip[] B_love => b_love;
     [SerializeField] private AudioClip[] b_MAYBE;
@@ -74,12 +78,16 @@ public class AudioData : ScriptableObject
     public AudioClip[] B_SOMETIMES => b_SOMETIMES;
     [SerializeField] private AudioClip[] b_SORRY;
     public AudioClip[] B_SORRY => b_SORRY;
+    [SerializeField] private AudioClip[] b_squirrels;
+    public AudioClip[] B_squirrels => b_squirrels;
     [SerializeField] private AudioClip[] b_STARS;
     public AudioClip[] B_STARS => b_STARS;
     [SerializeField] private AudioClip[] b_TAP;
     public AudioClip[] B_TAP => b_TAP;
     [SerializeField] private AudioClip[] b_tap;
     public AudioClip[] B_tap => b_tap;
+    [SerializeField] private AudioClip[] b_the;
+    public AudioClip[] B_the => b_the;
     [SerializeField] private AudioClip[] b_THIS;
     public AudioClip[] B_THIS => b_THIS;
     [SerializeField] private AudioClip[] b_this;
