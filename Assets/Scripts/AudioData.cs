@@ -6,12 +6,22 @@ using UnityEngine;
 public class AudioData : ScriptableObject
 {
     // Map audio data words
+    [SerializeField] private AudioClip[] b_anne;
+    public AudioClip[] B_anne => b_anne;
+    [SerializeField] private AudioClip[] b_BIG;
+    public AudioClip[] B_BIG => b_BIG;
     [SerializeField] private AudioClip[] b_Bork;
     public AudioClip[] B_Bork => b_Bork;
+    [SerializeField] private AudioClip[] b_bridget;
+    public AudioClip[] B_bridget => b_bridget;
+    [SerializeField] private AudioClip[] b_brown;
+    public AudioClip[] B_brown => b_brown;
     [SerializeField] private AudioClip[] b_EASY;
     public AudioClip[] B_EASY => b_EASY;
     [SerializeField] private AudioClip[] b_easy;
     public AudioClip[] B_easy => b_easy;
+    [SerializeField] private AudioClip[] b_FOLLOW;
+    public AudioClip[] B_FOLLOW => b_FOLLOW;
     [SerializeField] private AudioClip[] b_follow;
     public AudioClip[] B_follow => b_follow;
     [SerializeField] private AudioClip[] b_FOR;
@@ -28,16 +38,24 @@ public class AudioData : ScriptableObject
     public AudioClip[] B_GREEN => b_GREEN;
     [SerializeField] private AudioClip[] b_HARD;
     public AudioClip[] B_HARD => b_HARD;
+    [SerializeField] private AudioClip[] b_i;
+    public AudioClip[] B_i => b_i;
     [SerializeField] private AudioClip[] b_IS;
     public AudioClip[] B_IS => b_IS;
     [SerializeField] private AudioClip[] b_is;
     public AudioClip[] B_is => b_is;
+    [SerializeField] private AudioClip[] b_LIKE;
+    public AudioClip[] B_LIKE => b_LIKE;
+    [SerializeField] private AudioClip[] b_love;
+    public AudioClip[] B_love => b_love;
     [SerializeField] private AudioClip[] b_MAYBE;
     public AudioClip[] B_MAYBE => b_MAYBE;
     [SerializeField] private AudioClip[] b_MESSAGES;
     public AudioClip[] B_MESSAGES => b_MESSAGES;
     [SerializeField] private AudioClip[] b_NOPE;
     public AudioClip[] B_NOPE => b_NOPE;
+    [SerializeField] private AudioClip[] b_NOT;
+    public AudioClip[] B_NOT => b_NOT;
     [SerializeField] private AudioClip[] b_NOTHING;
     public AudioClip[] B_NOTHING => b_NOTHING;
     [SerializeField] private AudioClip[] b_PERSONAL;
@@ -50,6 +68,8 @@ public class AudioData : ScriptableObject
     public AudioClip[] B_red => b_red;
     [SerializeField] private AudioClip[] b_secret;
     public AudioClip[] B_secret => b_secret;
+    [SerializeField] private AudioClip[] b_SMALL;
+    public AudioClip[] B_SMALL => b_SMALL;
     [SerializeField] private AudioClip[] b_SOMETIMES;
     public AudioClip[] B_SOMETIMES => b_SOMETIMES;
     [SerializeField] private AudioClip[] b_SORRY;
@@ -70,8 +90,14 @@ public class AudioData : ScriptableObject
     public AudioClip[] B_time => b_time;
     [SerializeField] private AudioClip[] b_too;
     public AudioClip[] B_too => b_too;
+    [SerializeField] private AudioClip[] b_WHISPERS;
+    public AudioClip[] B_WHISPERS => b_WHISPERS;
+    [SerializeField] private AudioClip[] b_YELLOW;
+    public AudioClip[] B_YELLOW => b_YELLOW;
     [SerializeField] private AudioClip[] b_yellow;
     public AudioClip[] B_yellow => b_yellow;
+    [SerializeField] private AudioClip[] b_you;
+    public AudioClip[] B_you => b_you;
 
     // Start is called before the first frame update
     void Start()

@@ -48,6 +48,30 @@ public class Bork : MonoBehaviour
 
         // Map bork library - bork random sound
 
+        if (word == "anne")
+        {
+            borkNumber = Random.Range(0, bork.B_anne.Length);
+            audioSource.PlayOneShot(bork.B_anne[borkNumber]);
+        }
+
+        if (word == "BIG")
+        {
+            borkNumber = Random.Range(0, bork.B_BIG.Length);
+            audioSource.PlayOneShot(bork.B_BIG[borkNumber]);
+        }
+
+        if (word == "bridget")
+        {
+            borkNumber = Random.Range(0, bork.B_bridget.Length);
+            audioSource.PlayOneShot(bork.B_bridget[borkNumber]);
+        }
+
+        if (word == "brown")
+        {
+            borkNumber = Random.Range(0, bork.B_brown.Length);
+            audioSource.PlayOneShot(bork.B_brown[borkNumber]);
+        }
+
         if (word == "EASY")
         {
             borkNumber = Random.Range(0, bork.B_EASY.Length);
@@ -58,6 +82,12 @@ public class Bork : MonoBehaviour
         {
             borkNumber = Random.Range(0, bork.B_easy.Length);
             audioSource.PlayOneShot(bork.B_easy[borkNumber]);
+        }
+
+        if (word == "FOLLOW")
+        {
+            borkNumber = Random.Range(0, bork.B_FOLLOW.Length);
+            audioSource.PlayOneShot(bork.B_FOLLOW[borkNumber]);
         }
 
         if (word == "follow")
@@ -108,6 +138,12 @@ public class Bork : MonoBehaviour
             audioSource.PlayOneShot(bork.B_HARD[borkNumber]);
         }
 
+        if (word == "i")
+        {
+            borkNumber = Random.Range(0, bork.B_i.Length);
+            audioSource.PlayOneShot(bork.B_i[borkNumber]);
+        }
+
         if (word == "IS")
         {
             borkNumber = Random.Range(0, bork.B_IS.Length);
@@ -118,6 +154,18 @@ public class Bork : MonoBehaviour
         {
             borkNumber = Random.Range(0, bork.B_is.Length);
             audioSource.PlayOneShot(bork.B_is[borkNumber]);
+        }
+
+        if (word == "LIKE")
+        {
+            borkNumber = Random.Range(0, bork.B_LIKE.Length);
+            audioSource.PlayOneShot(bork.B_LIKE[borkNumber]);
+        }
+
+        if (word == "love")
+        {
+            borkNumber = Random.Range(0, bork.B_love.Length);
+            audioSource.PlayOneShot(bork.B_love[borkNumber]);
         }
 
         if (word == "MAYBE")
@@ -136,6 +184,12 @@ public class Bork : MonoBehaviour
         {
             borkNumber = Random.Range(0, bork.B_NOPE.Length);
             audioSource.PlayOneShot(bork.B_NOPE[borkNumber]);
+        }
+
+        if (word == "NOT")
+        {
+            borkNumber = Random.Range(0, bork.B_NOT.Length);
+            audioSource.PlayOneShot(bork.B_NOT[borkNumber]);
         }
 
         if (word == "NOTHING")
@@ -172,6 +226,12 @@ public class Bork : MonoBehaviour
         {
             borkNumber = Random.Range(0, bork.B_secret.Length);
             audioSource.PlayOneShot(bork.B_secret[borkNumber]);
+        }
+
+        if (word == "SMALL")
+        {
+            borkNumber = Random.Range(0, bork.B_SMALL.Length);
+            audioSource.PlayOneShot(bork.B_SMALL[borkNumber]);
         }
 
         if (word == "SOMETIMES")
@@ -234,10 +294,28 @@ public class Bork : MonoBehaviour
             audioSource.PlayOneShot(bork.B_too[borkNumber]);
         }
 
+        if (word == "WHISPERS")
+        {
+            borkNumber = Random.Range(0, bork.B_WHISPERS.Length);
+            audioSource.PlayOneShot(bork.B_WHISPERS[borkNumber]);
+        }
+
+        if (word == "YELLOW")
+        {
+            borkNumber = Random.Range(0, bork.B_YELLOW.Length);
+            audioSource.PlayOneShot(bork.B_YELLOW[borkNumber]);
+        }
+
         if (word == "yellow")
         {
             borkNumber = Random.Range(0, bork.B_yellow.Length);
             audioSource.PlayOneShot(bork.B_yellow[borkNumber]);
+        }
+
+        if (word == "you")
+        {
+            borkNumber = Random.Range(0, bork.B_you.Length);
+            audioSource.PlayOneShot(bork.B_you[borkNumber]);
         }
     }
 }

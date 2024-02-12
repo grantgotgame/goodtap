@@ -12,14 +12,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f4f13a27e0477c4b838481e155dcc05, type: 3}
   m_Name: audioData_
   m_EditorClassIdentifier: 
+  b_anne:
+  - {fileID: 8300000, guid: 92b20cb4c58d54e48b106fdf9b120bb8, type: 3}
+  - {fileID: 8300000, guid: 881642e16d2b2d945ab78aa0cf60e5fd, type: 3}
+  - {fileID: 8300000, guid: 3e9b990b8d35d2f4fa5e100889b4b223, type: 3}
+  b_BIG:
+  - {fileID: 8300000, guid: b727a223161b9fc4b8869c692f06bfa4, type: 3}
   b_Bork:
   - {fileID: 8300000, guid: d80eb839e262ecd458a63f72a910b8a2, type: 3}
   - {fileID: 8300000, guid: dcc19d47664f492438cac6cb84e69343, type: 3}
+  b_bridget:
+  - {fileID: 8300000, guid: a8f1cdac2d7ee634eb50b466a69ec092, type: 3}
+  - {fileID: 8300000, guid: ceaa5fb9346610a42953677f6ba42f63, type: 3}
+  - {fileID: 8300000, guid: 710f43647db229e4fb37ed5bf366da50, type: 3}
+  b_brown:
+  - {fileID: 8300000, guid: 0a64b338ba559a140be0be90db6b2f6c, type: 3}
+  - {fileID: 8300000, guid: 94818fd43f224e0469c6fddd494f7c34, type: 3}
+  - {fileID: 8300000, guid: ff08519bb5e8bce43b820f992a1ee5f3, type: 3}
   b_EASY:
   - {fileID: 8300000, guid: 488276571a429d049bf2d58b221fbb3f, type: 3}
   b_easy:
   - {fileID: 8300000, guid: 8927a6a349121ed41850eed0093a6b81, type: 3}
   - {fileID: 8300000, guid: 6a0a507050586c14db33d90248d5600b, type: 3}
+  b_FOLLOW:
+  - {fileID: 8300000, guid: 5532373627a65504dba8870bfa9ecba1, type: 3}
+  - {fileID: 8300000, guid: 5feaf22f6ddab5a40adfe46ac3aa2b7c, type: 3}
+  - {fileID: 8300000, guid: ad06002a406a3bb4390291d5af920157, type: 3}
   b_follow:
   - {fileID: 8300000, guid: 9fd4666a0d1f73d4cbf52d4de77116ac, type: 3}
   b_FOR:
@@ -39,12 +57,24 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 28d5ebd7f5cbf964fb6269b14ce40ac6, type: 3}
   b_HARD:
   - {fileID: 8300000, guid: 91ef609c924630a4c8467c3d552265ef, type: 3}
+  b_i:
+  - {fileID: 8300000, guid: 99c17d041ef03f44f8db5dcd1493ffa0, type: 3}
+  - {fileID: 8300000, guid: 1cab5f402ace3784bbb3fad0d1cc2ac5, type: 3}
+  - {fileID: 8300000, guid: 2804da336d2c3c44c9139970a62b15ca, type: 3}
   b_IS:
   - {fileID: 8300000, guid: 91cbc820030462845b3188be7c634a01, type: 3}
   - {fileID: 8300000, guid: 94d0c7c63f363e245a989707e97cfc91, type: 3}
   b_is:
   - {fileID: 8300000, guid: e5a3cd0586ff71448b86b051e753c373, type: 3}
   - {fileID: 8300000, guid: 387a6a020a4c2ba4ba00c6e98ccb4269, type: 3}
+  b_LIKE:
+  - {fileID: 8300000, guid: 2db26f5eae2dae244bbaf7cfea43663d, type: 3}
+  - {fileID: 8300000, guid: aabdacc3b279b7242851d3ac2b09e17b, type: 3}
+  - {fileID: 8300000, guid: e99502b431e2e914eae162cc146ad457, type: 3}
+  b_love:
+  - {fileID: 8300000, guid: eea0299894a4870409d3be5421bb1d46, type: 3}
+  - {fileID: 8300000, guid: e2a02feb69f1e39499669fa22392633b, type: 3}
+  - {fileID: 8300000, guid: c8f28599e234420478db3d8643de87c1, type: 3}
   b_MAYBE:
   - {fileID: 8300000, guid: 4e584a0013aee4448a7b5e1329790db3, type: 3}
   b_MESSAGES:
@@ -58,6 +88,15 @@ MonoBehaviour:
   - {fileID: 8300000, guid: ab46c75f544012f4f88ce32491b92153, type: 3}
   - {fileID: 8300000, guid: 63aef33388b18034c8898c4924df6dde, type: 3}
   - {fileID: 8300000, guid: 280012932ba1b454c8b69024f18289cd, type: 3}
+  - {fileID: 8300000, guid: 17e582640f06d5245b399f28ae8b4682, type: 3}
+  - {fileID: 8300000, guid: 155881b6df1584c4fbf7eef63cf5d85a, type: 3}
+  - {fileID: 8300000, guid: 2d3a144ec977c9248b216df07f0683a4, type: 3}
+  - {fileID: 8300000, guid: 22598f125b3c52249b37860b65d709d7, type: 3}
+  b_NOT:
+  - {fileID: 8300000, guid: 11f60adbb4e655141bee1519c44c378d, type: 3}
+  - {fileID: 8300000, guid: 783f47e6f48af1941be3fb3ef98a49fd, type: 3}
+  - {fileID: 8300000, guid: 37cfaf088862b8347ab3b0496f0e6039, type: 3}
+  - {fileID: 8300000, guid: f844fdc09ed6a61438ed0fb9b1b2a85e, type: 3}
   b_NOTHING:
   - {fileID: 8300000, guid: 04cf5d0422430a04b8b12fb35262c2e1, type: 3}
   b_PERSONAL:
@@ -73,6 +112,9 @@ MonoBehaviour:
   b_secret:
   - {fileID: 8300000, guid: 2561685cae8b37e4381218bb17307e8e, type: 3}
   - {fileID: 8300000, guid: 9969db880b9f06945a9b79b84477ff36, type: 3}
+  b_SMALL:
+  - {fileID: 8300000, guid: 4be839f5ecd55ac41802cfac0c8553df, type: 3}
+  - {fileID: 8300000, guid: a4b55c9f170bfd74786da3e2a014b169, type: 3}
   b_SOMETIMES:
   - {fileID: 8300000, guid: 86dab62eb54e1ce4dbc0b77af3e7c152, type: 3}
   b_SORRY:
@@ -87,6 +129,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0660eb3f179ab6741add279423b040b0, type: 3}
   b_THIS:
   - {fileID: 8300000, guid: c263e246c3e7bd44b9c873da5d8c44a8, type: 3}
+  - {fileID: 8300000, guid: 81f560b334a790c4ebd5a714e7c99b36, type: 3}
+  - {fileID: 8300000, guid: 16ab6931b9fa6b34f91c9035e255b051, type: 3}
+  - {fileID: 8300000, guid: 4432ea7689380a54783db2e9330f477b, type: 3}
   b_this:
   - {fileID: 8300000, guid: fb863349877258849918960c7225723c, type: 3}
   - {fileID: 8300000, guid: b9e616959f432f14e93f1f3ad9c54559, type: 3}
@@ -100,7 +145,17 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6a7d038be697d774295f118f3044c85c, type: 3}
   b_too:
   - {fileID: 8300000, guid: 63288004d3d33e142a21ec0146165d5c, type: 3}
+  b_WHISPERS:
+  - {fileID: 8300000, guid: 1e2ae29be4253764d8c17ee6bf69f407, type: 3}
+  - {fileID: 8300000, guid: d106b8f0776e3fc48b1c2e1b840af50a, type: 3}
+  - {fileID: 8300000, guid: c67f5ad518b12b241adc70219a079076, type: 3}
+  b_YELLOW:
+  - {fileID: 8300000, guid: db7e30773b313b944beccac7ad68a25d, type: 3}
   b_yellow:
   - {fileID: 8300000, guid: b9df732ad99541c4d95415ea99d5d45f, type: 3}
   - {fileID: 8300000, guid: 91081f315960a7847bc58f3d4a4d0cf9, type: 3}
   - {fileID: 8300000, guid: 3f8644b3ed59d6740aefe58fff289097, type: 3}
+  b_you:
+  - {fileID: 8300000, guid: ff075f026bd0ef7429aebaa5b4af0a26, type: 3}
+  - {fileID: 8300000, guid: 2fb92e34c274c9c47908de9a268aed8d, type: 3}
+  - {fileID: 8300000, guid: bdc6975086b5de14b8303378ff09aa4f, type: 3}
