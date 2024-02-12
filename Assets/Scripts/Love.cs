@@ -10,9 +10,6 @@ public class Love : MonoBehaviour
 {
     // Map audio
     private AudioSource audioSource;
-    [SerializeField] AudioClip[] audioGreen;
-    [SerializeField] AudioClip[] audioYellow;
-    [SerializeField] AudioClip[] audioRed;
 
     // Map buttons and their containers
     [SerializeField] GameObject[] buttonsGreen;
@@ -23,6 +20,7 @@ public class Love : MonoBehaviour
     private int stepCounterGreen = 0;
     private int stepCounterYellow = 0;
     private int stepCounterRed = 0;
+    private int stepCounterMain = 0;
 
     // String to track script name for CompleteLevel function
     private string scriptName;
@@ -55,8 +53,8 @@ public class Love : MonoBehaviour
 
     /*
         For each button:
-        - Deactivate button
         - Play audio
+        - Deactivate button
         - Wait
         - Increment step counter
         - Set next button container active
@@ -68,8 +66,9 @@ public class Love : MonoBehaviour
         buttonText = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<TMP_Text>().text;
         bork.BorkWord(buttonText);
 
-        // Deactivate button
-        buttonsGreen[stepCounterGreen].GetComponent<Button>().interactable = false;
+        // Deactivate buttons
+        buttonsGreen[stepCounterMain].GetComponent<Button>().interactable = false;
+        buttonsRed[stepCounterMain].GetComponent<Button>().interactable = false;
 
         StartCoroutine(IButtonsGreen());
     }
@@ -81,19 +80,27 @@ public class Love : MonoBehaviour
 
             // Increment step counter
             stepCounterGreen++;
+            stepCounterMain++;
 
-            // Set next button active
-            if (stepCounterGreen < buttonsGreen.Length)
+            // Set next buttons active
+            if (stepCounterMain < buttonsGreen.Length)
             {
-                buttonsGreen[stepCounterGreen].SetActive(true);
-                buttonsGreen[stepCounterGreen].GetComponent<Button>().interactable = true;
+                buttonsGreen[stepCounterMain].SetActive(true);
+                buttonsGreen[stepCounterMain].GetComponent<Button>().interactable = true;
+                buttonsYellow[stepCounterMain].SetActive(true);
+                buttonsYellow[stepCounterMain].GetComponent<Button>().interactable = true;
+                buttonsRed[stepCounterMain].SetActive(true);
+                buttonsRed[stepCounterMain].GetComponent<Button>().interactable = true;
             }
 
             // If no more buttons, complete level
             else
             {
-                // Award green star
-                PlayerPrefs.SetInt(scriptName + "StarGreen", 1);
+                // If conditions are met, award green star
+                if (stepCounterGreen == stepCounterMain)
+                {
+                    PlayerPrefs.SetInt(scriptName + "StarGreen", 1);
+                }
 
                 CompleteLevel();
             }
@@ -102,6 +109,8 @@ public class Love : MonoBehaviour
 
     public void ButtonsYellow()
     {
+        stepCounterYellow++;
+        
         // Play audio
         buttonText = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<TMP_Text>().text;
         bork.BorkWord(buttonText);
@@ -112,24 +121,29 @@ public class Love : MonoBehaviour
     IEnumerator IButtonsYellow()
     {
         {
-            // Deactivate button
-            buttonsYellow[stepCounterYellow].GetComponent<Button>().interactable = false;
+            // Deactivate buttons
+            buttonsYellow[stepCounterMain].GetComponent<Button>().interactable = false;
+            buttonsGreen[stepCounterMain].GetComponent<Button>().interactable = false;
+            buttonsRed[stepCounterMain].GetComponent<Button>().interactable = false;
 
             // Wait 1 second
             yield return new WaitForSeconds(0.5f);
 
             // Increment step counter
-            stepCounterYellow++;
+            stepCounterMain++;
 
-            // Set next button active
-            if (stepCounterYellow < buttonsYellow.Length)
-            { buttonsYellow[stepCounterYellow].SetActive(true); }
+            // Set next buttons active
+            if (stepCounterMain < buttonsYellow.Length)
+            {
+                buttonsGreen[stepCounterMain].SetActive(true);
+                buttonsRed[stepCounterMain].SetActive(true);
+            }
 
             // If no more buttons, complete level
             else
             {
                 // Award yellow star if victory conditions are met
-                if (stepCounterGreen == 0 && stepCounterRed == 0)
+                if (stepCounterYellow == stepCounterMain)
                 { PlayerPrefs.SetInt(scriptName + "StarYellow", 1); }
 
                 CompleteLevel();
@@ -149,24 +163,36 @@ public class Love : MonoBehaviour
     IEnumerator IButtonsRed()
     {
         {
-            // Deactivate button
-            buttonsRed[stepCounterRed].GetComponent<Button>().interactable = false;
+            // Deactivate buttons
+            buttonsRed[stepCounterMain].GetComponent<Button>().interactable = false;
+            buttonsGreen[stepCounterMain].GetComponent<Button>().interactable = false;
 
             // Wait 1 second
             yield return new WaitForSeconds(0.25f);
 
             // Increment step counter
             stepCounterRed++;
+            stepCounterMain++;
 
             // Set next button active
-            if (stepCounterRed < buttonsRed.Length)
-            { buttonsRed[stepCounterRed].SetActive(true); }
+            if (stepCounterMain < buttonsRed.Length)
+            {
+                buttonsRed[stepCounterMain].SetActive(true);
+                buttonsRed[stepCounterMain].GetComponent<Button>().interactable = true;
+                buttonsYellow[stepCounterMain].SetActive(true);
+                buttonsYellow[stepCounterMain].GetComponent<Button>().interactable = true;
+                buttonsGreen[stepCounterMain].SetActive(true);
+                buttonsGreen[stepCounterMain].GetComponent<Button>().interactable = true;
+            }
 
             // If no more buttons, complete level
             else
             {
-                // Award red star
-                PlayerPrefs.SetInt(scriptName + "StarRed", 1);
+                // If conditions are met, award red star
+                if (stepCounterRed == stepCounterMain)
+                {
+                    PlayerPrefs.SetInt(scriptName + "StarRed", 1);
+                }
 
                 CompleteLevel();
             }
