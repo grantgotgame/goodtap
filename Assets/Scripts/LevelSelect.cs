@@ -28,6 +28,10 @@ public class LevelSelect : MonoBehaviour
     [SerializeField] GameObject starLoveGreenYes;
     [SerializeField] GameObject starLoveYellowYes;
     [SerializeField] GameObject starLoveRedYes;
+    [SerializeField] GameObject buttonCan;
+    [SerializeField] GameObject starCanGreenYes;
+    [SerializeField] GameObject starCanYellowYes;
+    [SerializeField] GameObject starCanRedYes;
     [SerializeField] GameObject newLevelText;
 
     // Start is called before the first frame update
@@ -55,7 +59,11 @@ public class LevelSelect : MonoBehaviour
         UnlockIfCleared("LoveStarGreen", starLoveGreenYes);
         UnlockIfCleared("LoveStarYellow", starLoveYellowYes);
         UnlockIfCleared("LoveStarRed", starLoveRedYes);
-        UnlockIfCleared("Love", newLevelText);
+        UnlockIfCleared("Love", buttonCan);
+        UnlockIfCleared("CanStarGreen", starCanGreenYes);
+        UnlockIfCleared("CanStarYellow", starCanYellowYes);
+        UnlockIfCleared("CanStarRed", starCanRedYes);
+        UnlockIfCleared("Can", newLevelText);
     }
 
     // Update is called once per frame

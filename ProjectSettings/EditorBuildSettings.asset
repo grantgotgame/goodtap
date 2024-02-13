@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Love.unity
     guid: 32aa81a110b7c794584d2a73d436854b
+  - enabled: 1
+    path: Assets/Scenes/Can.unity
+    guid: a8941660dcadc5b4d9ae261639a04ff9
   m_configObjects: {}
