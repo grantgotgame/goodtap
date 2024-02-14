@@ -23,7 +23,7 @@ public class Be : MonoBehaviour
     private int stepCounterGreen = 0;
     private int stepCounterYellow = 0;
     private int stepCounterRed = 0;
-    private int stepCounterMain = 0;
+    //private int stepCounterMain = 0;
 
     // String to track script name for CompleteLevel function
     private string scriptName;

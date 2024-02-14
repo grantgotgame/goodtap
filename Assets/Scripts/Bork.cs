@@ -14,18 +14,31 @@ public class Bork : MonoBehaviour
     // Variables for Bork functions
     private int borkNumber = 0;
     [SerializeField] private GameObject doggoWithHeadphones;
+    private int headphonesRandomizer = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         // Map audio source
         audioSource = GetComponent<AudioSource>();
+
+        RandomizeHeadphones();
     }
 
     // Update is called once per frame
     void Update()
     {
 
+    }
+
+    // Randomize doggo headphones
+    private void RandomizeHeadphones()
+    {
+        headphonesRandomizer = Random.Range(0, 2);
+        if (headphonesRandomizer == 1)
+        { doggoWithHeadphones.SetActive(true); }
+        else
+        { doggoWithHeadphones.SetActive(false); }
     }
 
     // Bork on button press
@@ -39,7 +52,7 @@ public class Bork : MonoBehaviour
         PlayerPrefs.SetInt("BorkCount", PlayerPrefs.GetInt("BorkCount") + 1);
 
         // Toggle headphones
-        doggoWithHeadphones.SetActive(!doggoWithHeadphones.activeInHierarchy);
+        RandomizeHeadphones();
     }
 
     // Sing or whisper on button press
