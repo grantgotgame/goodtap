@@ -70,8 +70,7 @@ public class Be : MonoBehaviour
         bork.BorkWord(buttonText);
 
         // Deactivate buttons
-        buttonCurrent = EventSystem.current.currentSelectedGameObject;
-        buttonCurrent.GetComponent<Button>().interactable = false;
+        DeactivateThisButton();
         //buttonsGreen[stepCounterMain].GetComponent<Button>().interactable = false;
         //buttonsRed[stepCounterMain].GetComponent<Button>().interactable = false;
 
@@ -121,28 +120,29 @@ public class Be : MonoBehaviour
         buttonText = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<TMP_Text>().text;
         bork.BorkWord(buttonText);
 
+        // Deactivate buttons
+        DeactivateThisButton();
+        //buttonsYellow[stepCounterMain].GetComponent<Button>().interactable = false;
+        //buttonsGreen[stepCounterMain].GetComponent<Button>().interactable = false;
+        //buttonsRed[stepCounterMain].GetComponent<Button>().interactable = false;
+
         StartCoroutine(IButtonsYellow());
     }
 
     IEnumerator IButtonsYellow()
     {
         {
-            // Deactivate buttons
-            buttonsYellow[stepCounterMain].GetComponent<Button>().interactable = false;
-            //buttonsGreen[stepCounterMain].GetComponent<Button>().interactable = false;
-            //buttonsRed[stepCounterMain].GetComponent<Button>().interactable = false;
-
             // Wait less than a second
             yield return new WaitForSeconds(0.5f);
 
             // Increment step counter
-            stepCounterMain++;
+            //stepCounterMain++;
 
             // Set next buttons active
-            if (stepCounterMain < buttonsYellow.Length)
+            if (stepCounterYellow < buttonsYellow.Length)
             {
-                buttonsYellow[stepCounterMain].SetActive(true);
-                buttonsYellow[stepCounterMain].GetComponent<Button>().interactable = true;
+                buttonsYellow[stepCounterYellow].SetActive(true);
+                buttonsYellow[stepCounterYellow].GetComponent<Button>().interactable = true;
                 //buttonsGreen[stepCounterMain].SetActive(true);
                 //buttonsRed[stepCounterMain].SetActive(true);
             }
@@ -165,22 +165,23 @@ public class Be : MonoBehaviour
         buttonText = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<TMP_Text>().text;
         bork.BorkWord(buttonText);
 
+        // Deactivate buttons
+        DeactivateThisButton();
+        //buttonsRed[stepCounterMain].GetComponent<Button>().interactable = false;
+        //buttonsGreen[stepCounterMain].GetComponent<Button>().interactable = false;
+
         StartCoroutine(IButtonsRed());
     }
 
     IEnumerator IButtonsRed()
     {
         {
-            // Deactivate buttons
-            //buttonsRed[stepCounterMain].GetComponent<Button>().interactable = false;
-            //buttonsGreen[stepCounterMain].GetComponent<Button>().interactable = false;
-
             // Wait less than a second
             yield return new WaitForSeconds(0.25f);
 
             // Increment step counter
             stepCounterRed++;
-            stepCounterMain++;
+            //stepCounterMain++;
 
             // Set next button active
             // if (stepCounterMain < buttonsRed.Length)
@@ -198,6 +199,25 @@ public class Be : MonoBehaviour
         }
     }
 
+    public void ButtonsBlank()
+    {
+        // Play audio
+        buttonText = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<TMP_Text>().text;
+        bork.BorkWord(buttonText);
+
+        DeactivateThisButton();
+
+        // Start countdown
+        CompleteLevel();
+    }
+
+    private void DeactivateThisButton()
+    {
+        // Deactivate currently selected button
+        buttonCurrent = EventSystem.current.currentSelectedGameObject;
+        buttonCurrent.GetComponent<Button>().interactable = false;
+    }
+
     // Mark level complete and load Level Select
     public void CompleteLevel()
     {
@@ -213,7 +233,7 @@ public class Be : MonoBehaviour
         yield return new WaitForSeconds(3);
 
         // If conditions are met, award red star
-        if (stepCounterRed == 1)
+        if (stepCounterRed >= buttonsRed.Length)
         {
             PlayerPrefs.SetInt(scriptName + "StarRed", 1);
         }
