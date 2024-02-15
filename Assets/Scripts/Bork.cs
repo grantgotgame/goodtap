@@ -14,7 +14,9 @@ public class Bork : MonoBehaviour
     // Variables for Bork functions
     private int borkNumber = 0;
     [SerializeField] private GameObject doggoWithHeadphones;
+    [SerializeField] private GameObject doggoWithBow;
     private int headphonesRandomizer = 0;
+    private bool levelBeCleared = false;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +24,12 @@ public class Bork : MonoBehaviour
         // Map audio source
         audioSource = GetComponent<AudioSource>();
 
-        RandomizeHeadphones();
+        // Check if level Be has been cleared
+        levelBeCleared = (PlayerPrefs.GetInt("Be") != 0);
+
+        // Randomize headphones on Level Select screen
+        if (SceneManager.GetActiveScene().name == "LevelSelect")
+        { RandomizeHeadphones(); }
     }
 
     // Update is called once per frame
@@ -31,14 +38,38 @@ public class Bork : MonoBehaviour
 
     }
 
-    // Randomize doggo headphones
+    // Randomize doggo headphones and bow
     private void RandomizeHeadphones()
     {
-        headphonesRandomizer = Random.Range(0, 2);
-        if (headphonesRandomizer == 1)
-        { doggoWithHeadphones.SetActive(true); }
+        // If level Be is complete, activate doggo bow
+        if (levelBeCleared)
+        {
+            headphonesRandomizer = Random.Range(0, 3);
+            if (headphonesRandomizer == 1)
+            {
+                doggoWithHeadphones.SetActive(true);
+                doggoWithBow.SetActive(false);
+            }
+            else if (headphonesRandomizer == 2)
+            {
+                doggoWithHeadphones.SetActive(false);
+                doggoWithBow.SetActive(true);
+            }
+            else
+            {
+                doggoWithHeadphones.SetActive(false);
+                doggoWithBow.SetActive(false);
+            }
+        }
+        // If level Be is not clear, cycle between headphones only
         else
-        { doggoWithHeadphones.SetActive(false); }
+        {
+            headphonesRandomizer = Random.Range(0, 2);
+            if (headphonesRandomizer == 1)
+            { doggoWithHeadphones.SetActive(true); }
+            else
+            { doggoWithHeadphones.SetActive(false); }
+        }
     }
 
     // Bork on button press
