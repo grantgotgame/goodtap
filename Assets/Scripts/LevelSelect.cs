@@ -72,6 +72,9 @@ public class LevelSelect : MonoBehaviour
         UnlockIfCleared("BeStarYellow", starBeYellowYes);
         UnlockIfCleared("BeStarRed", starBeRedYes);
         UnlockIfCleared("Be", newLevelText);
+
+        // If all levels are cleared, unlock Letter
+        UnlockLetter();
     }
 
     // Update is called once per frame
@@ -96,5 +99,10 @@ public class LevelSelect : MonoBehaviour
         //Unlock objectToUnlock if level has been cleared
         if (clear)
         { objectToUnlock.SetActive(true); }
+    }
+
+    private void UnlockLetter()
+    {
+
     }
 }

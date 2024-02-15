@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Be.unity
     guid: 980d92c62e1e02742a48be49ceee5338
+  - enabled: 1
+    path: Assets/Scenes/LetterLevelSelect.unity
+    guid: 9342f8f312a507b4c9998e1a615ddcdc
   m_configObjects: {}
