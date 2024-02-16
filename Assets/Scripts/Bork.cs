@@ -90,7 +90,7 @@ public class Bork : MonoBehaviour
         PlayerPrefs.SetInt("BorkCount", PlayerPrefs.GetInt("BorkCount") + 1);
 
         // If bork count hi enough, activate doNotPress
-        if (PlayerPrefs.GetInt("BorkCount") > 1)
+        if (PlayerPrefs.GetInt("BorkCount") > 100)
         { doNotPress.SetActive(true); }
     }
 
