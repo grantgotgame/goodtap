@@ -38,6 +38,10 @@ public class LevelSelect : MonoBehaviour
     [SerializeField] GameObject starBeRedYes;
     [SerializeField] GameObject newLevelText;
 
+    // Variables for UnlockLetterIfCleared
+    [SerializeField] GameObject letterLevelSelect;
+    private bool letterLevelSelectYes;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -73,8 +77,8 @@ public class LevelSelect : MonoBehaviour
         UnlockIfCleared("BeStarRed", starBeRedYes);
         UnlockIfCleared("Be", newLevelText);
 
-        // If all levels are cleared, unlock Letter
-        UnlockLetter();
+        // If all stars are cleared, unlock Letter
+        UnlockLetterIfCleared();
     }
 
     // Update is called once per frame
@@ -101,8 +105,38 @@ public class LevelSelect : MonoBehaviour
         { objectToUnlock.SetActive(true); }
     }
 
-    private void UnlockLetter()
+    // If all stars are cleared, unlock Letter
+    private void UnlockLetterIfCleared()
     {
+        // If letter has been cleared, set it active
+        letterLevelSelectYes = (PlayerPrefs.GetInt("LevelSelectLetter") != 0);
+        if (letterLevelSelectYes)
+        { letterLevelSelect.SetActive(true); }
 
+        // If letter not clear, check if all stars collected
+        else if (
+            PlayerPrefs.GetInt("ThreeStarGreen") != 0 &&
+            PlayerPrefs.GetInt("ThatsStarRed") != 0 &&
+            PlayerPrefs.GetInt("HowStarGreen") != 0 &&
+            PlayerPrefs.GetInt("HowStarYellow") != 0 &&
+            PlayerPrefs.GetInt("HowStarRed") != 0 &&
+            PlayerPrefs.GetInt("EasyStarGreen") != 0 &&
+            PlayerPrefs.GetInt("EasyStarYellow") != 0 &&
+            PlayerPrefs.GetInt("EasyStarRed") != 0 &&
+            PlayerPrefs.GetInt("LoveStarGreen") != 0 &&
+            PlayerPrefs.GetInt("LoveStarYellow") != 0 &&
+            PlayerPrefs.GetInt("LoveStarRed") != 0 &&
+            PlayerPrefs.GetInt("CanStarGreen") != 0 &&
+            PlayerPrefs.GetInt("CanStarYellow") != 0 &&
+            PlayerPrefs.GetInt("CanStarRed") != 0 &&
+            PlayerPrefs.GetInt("BeStarGreen") != 0 &&
+            PlayerPrefs.GetInt("BeStarYellow") != 0 &&
+            PlayerPrefs.GetInt("BeStarRed") != 0
+        )
+        // If all stars, unlock Letter
+        {
+            PlayerPrefs.SetInt("LevelSelectLetter", 1);
+            letterLevelSelect.SetActive(true);
+        }
     }
 }

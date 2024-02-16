@@ -3408,6 +3408,7 @@ MonoBehaviour:
   starBeYellowYes: {fileID: 1556081837}
   starBeRedYes: {fileID: 1654384021}
   newLevelText: {fileID: 410430934}
+  letterLevelSelect: {fileID: 391298109}
 --- !u!114 &880897701
 MonoBehaviour:
   m_ObjectHideFlags: 0
