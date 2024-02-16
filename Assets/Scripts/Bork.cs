@@ -13,9 +13,10 @@ public class Bork : MonoBehaviour
 
     // Variables for Bork functions
     private int borkNumber = 0;
+    private int headphonesRandomizer = 0;
     [SerializeField] private GameObject doggoWithHeadphones;
     [SerializeField] private GameObject doggoWithBow;
-    private int headphonesRandomizer = 0;
+    [SerializeField] private GameObject doNotPress;
     private bool levelBeCleared = false;
 
     // Start is called before the first frame update
@@ -23,6 +24,9 @@ public class Bork : MonoBehaviour
     {
         // Map audio source
         audioSource = GetComponent<AudioSource>();
+
+        // Reset bork count
+        PlayerPrefs.SetInt("BorkCount", 0);
 
         // Check if level Be has been cleared
         levelBeCleared = (PlayerPrefs.GetInt("Be") != 0);
@@ -79,11 +83,15 @@ public class Bork : MonoBehaviour
         borkNumber = Random.Range(0, bork.B_Bork.Length);
         audioSource.PlayOneShot(bork.B_Bork[borkNumber]);
 
+        // Toggle headphones
+        RandomizeHeadphones();
+
         // Mark doggo as borked
         PlayerPrefs.SetInt("BorkCount", PlayerPrefs.GetInt("BorkCount") + 1);
 
-        // Toggle headphones
-        RandomizeHeadphones();
+        // If bork count hi enough, activate doNotPress
+        if (PlayerPrefs.GetInt("BorkCount") > 1)
+        { doNotPress.SetActive(true); }
     }
 
     // Sing or whisper on button press
