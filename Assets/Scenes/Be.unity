@@ -4272,10 +4272,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
+  m_ReferencePixelsPerUnit: 200
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 600, y: 600}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -7972,6 +7972,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bork: {fileID: 11400000, guid: 9a32b148587b94d408167a3f48967e1d, type: 2}
   doggoWithHeadphones: {fileID: 0}
+  doggoWithBow: {fileID: 0}
+  doNotPress: {fileID: 0}
 --- !u!114 &2105339025
 MonoBehaviour:
   m_ObjectHideFlags: 0
