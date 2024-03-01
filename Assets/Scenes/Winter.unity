@@ -295,7 +295,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Easy
+  m_text: All
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -429,7 +429,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Can
+  m_text: Some
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -788,7 +788,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Be!
+  m_text: Nuts!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -878,12 +878,12 @@ GameObject:
   - component: {fileID: 326584241}
   - component: {fileID: 326584240}
   m_Layer: 5
-  m_Name: Two
+  m_Name: Five
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &326584239
 RectTransform:
   m_ObjectHideFlags: 0
@@ -903,7 +903,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 45.89, y: 39.899986}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 75, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &326584240
 MonoBehaviour:
@@ -949,7 +949,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 880897700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
         m_MethodName: LoadLevel
         m_Mode: 1
@@ -981,8 +981,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 8ef31d7465161564b86401caa4113f2a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1056,7 +1056,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Two
+  m_text: Five
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1190,7 +1190,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: That's
+  m_text: Squirrels
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1350,7 +1350,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 880897700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
         m_MethodName: LoadLevel
         m_Mode: 1
@@ -2266,7 +2266,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: One
+  m_text: Four
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2356,12 +2356,12 @@ GameObject:
   - component: {fileID: 574633540}
   - component: {fileID: 574633539}
   m_Layer: 5
-  m_Name: Be
+  m_Name: Nuts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &574633538
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2432,7 +2432,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 880897700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
         m_MethodName: LoadLevel
         m_Mode: 1
@@ -2464,8 +2464,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 8ef31d7465161564b86401caa4113f2a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2495,12 +2495,12 @@ GameObject:
   - component: {fileID: 625219266}
   - component: {fileID: 625219265}
   m_Layer: 5
-  m_Name: Thats
+  m_Name: Squirrels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &625219264
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2521,7 +2521,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -90, y: -50}
-  m_SizeDelta: {x: 75, y: 50}
+  m_SizeDelta: {x: 125, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &625219265
 MonoBehaviour:
@@ -2567,7 +2567,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 880897700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
         m_MethodName: LoadLevel
         m_Mode: 1
@@ -2599,8 +2599,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 8ef31d7465161564b86401caa4113f2a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2749,7 +2749,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: C
+  m_text: F
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2883,7 +2883,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: B
+  m_text: E
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3329,9 +3329,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 880897699}
-  - component: {fileID: 880897700}
   - component: {fileID: 880897701}
   - component: {fileID: 880897702}
+  - component: {fileID: 880897703}
   m_Layer: 0
   m_Name: buttons
   m_TagString: Untagged
@@ -3366,49 +3366,6 @@ Transform:
   - {fileID: 574633538}
   m_Father: {fileID: 1708299401}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &880897700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 880897698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3626161197df08e45a005ff4628aa437, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonB: {fileID: 1590733363}
-  buttonC: {fileID: 2143174709}
-  buttonOne: {fileID: 899403016}
-  buttonTwo: {fileID: 326584238}
-  stars5: {fileID: 132222777}
-  buttonThree: {fileID: 931961326}
-  starThreeYes: {fileID: 1118509080}
-  buttonThats: {fileID: 625219263}
-  starThatsYes: {fileID: 495978348}
-  buttonHow: {fileID: 1816066504}
-  starHowGreenYes: {fileID: 936238855}
-  starHowYellowYes: {fileID: 497194343}
-  starHowRedYes: {fileID: 1021353538}
-  buttonEasy: {fileID: 976084598}
-  starEasyGreenYes: {fileID: 421400250}
-  starEasyYellowYes: {fileID: 917709049}
-  starEasyRedYes: {fileID: 441272583}
-  buttonLove: {fileID: 1447242812}
-  starLoveGreenYes: {fileID: 1364159674}
-  starLoveYellowYes: {fileID: 1838346711}
-  starLoveRedYes: {fileID: 1090604395}
-  buttonCan: {fileID: 1267349633}
-  starCanGreenYes: {fileID: 2069167811}
-  starCanYellowYes: {fileID: 1416010246}
-  starCanRedYes: {fileID: 1256903369}
-  buttonBe: {fileID: 574633537}
-  starBeGreenYes: {fileID: 255505509}
-  starBeYellowYes: {fileID: 1556081837}
-  starBeRedYes: {fileID: 1654384021}
-  newLevelText: {fileID: 410430934}
-  letterLevelSelect: {fileID: 391298109}
 --- !u!114 &880897701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3521,6 +3478,49 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &880897703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880897698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2564c0728477b04893b79a1b245faca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonB: {fileID: 0}
+  buttonC: {fileID: 0}
+  buttonOne: {fileID: 0}
+  buttonTwo: {fileID: 0}
+  stars5: {fileID: 0}
+  buttonThree: {fileID: 0}
+  starThreeYes: {fileID: 0}
+  buttonThats: {fileID: 0}
+  starThatsYes: {fileID: 0}
+  buttonHow: {fileID: 0}
+  starHowGreenYes: {fileID: 0}
+  starHowYellowYes: {fileID: 0}
+  starHowRedYes: {fileID: 0}
+  buttonEasy: {fileID: 0}
+  starEasyGreenYes: {fileID: 0}
+  starEasyYellowYes: {fileID: 0}
+  starEasyRedYes: {fileID: 0}
+  buttonLove: {fileID: 0}
+  starLoveGreenYes: {fileID: 0}
+  starLoveYellowYes: {fileID: 0}
+  starLoveRedYes: {fileID: 0}
+  buttonCan: {fileID: 0}
+  starCanGreenYes: {fileID: 0}
+  starCanYellowYes: {fileID: 0}
+  starCanRedYes: {fileID: 0}
+  buttonBe: {fileID: 0}
+  starBeGreenYes: {fileID: 0}
+  starBeYellowYes: {fileID: 0}
+  starBeRedYes: {fileID: 0}
+  newLevelText: {fileID: 0}
+  letterLevelSelect: {fileID: 0}
 --- !u!1 &899403016
 GameObject:
   m_ObjectHideFlags: 0
@@ -3534,12 +3534,12 @@ GameObject:
   - component: {fileID: 899403019}
   - component: {fileID: 899403018}
   m_Layer: 5
-  m_Name: One
+  m_Name: Four
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &899403017
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3558,7 +3558,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -90, y: 50}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 75, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &899403018
 MonoBehaviour:
@@ -3604,7 +3604,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 880897700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
         m_MethodName: LoadLevel
         m_Mode: 1
@@ -3636,8 +3636,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 8ef31d7465161564b86401caa4113f2a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3742,12 +3742,12 @@ GameObject:
   - component: {fileID: 931961329}
   - component: {fileID: 931961328}
   m_Layer: 5
-  m_Name: Three
+  m_Name: Six
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &931961327
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3814,7 +3814,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 880897700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
         m_MethodName: LoadLevel
         m_Mode: 1
@@ -3846,8 +3846,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 8ef31d7465161564b86401caa4113f2a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4088,12 +4088,12 @@ GameObject:
   - component: {fileID: 976084601}
   - component: {fileID: 976084600}
   m_Layer: 5
-  m_Name: Easy
+  m_Name: All
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &976084599
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4118,7 +4118,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 135, y: -50}
-  m_SizeDelta: {x: 75, y: 50}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &976084600
 MonoBehaviour:
@@ -4164,7 +4164,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 880897700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
         m_MethodName: LoadLevel
         m_Mode: 1
@@ -4196,8 +4196,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 8ef31d7465161564b86401caa4113f2a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4346,7 +4346,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Love
+  m_text: Suck
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4961,7 +4961,7 @@ GameObject:
   - component: {fileID: 1199569663}
   - component: {fileID: 1199569662}
   m_Layer: 5
-  m_Name: A
+  m_Name: D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5031,7 +5031,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 880897700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
         m_MethodName: LoadLevel
         m_Mode: 1
@@ -5063,8 +5063,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 8ef31d7465161564b86401caa4113f2a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5169,12 +5169,12 @@ GameObject:
   - component: {fileID: 1267349636}
   - component: {fileID: 1267349635}
   m_Layer: 5
-  m_Name: Can
+  m_Name: Some
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1267349634
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5245,7 +5245,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 880897700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
         m_MethodName: LoadLevel
         m_Mode: 1
@@ -5277,8 +5277,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 8ef31d7465161564b86401caa4113f2a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5826,12 +5826,12 @@ GameObject:
   - component: {fileID: 1447242815}
   - component: {fileID: 1447242814}
   m_Layer: 5
-  m_Name: Love
+  m_Name: Suck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1447242813
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5902,7 +5902,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 880897700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
         m_MethodName: LoadLevel
         m_Mode: 1
@@ -5934,8 +5934,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 8ef31d7465161564b86401caa4113f2a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6084,7 +6084,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: How
+  m_text: Should
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6324,12 +6324,12 @@ GameObject:
   - component: {fileID: 1590733366}
   - component: {fileID: 1590733365}
   m_Layer: 5
-  m_Name: B
+  m_Name: E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1590733364
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6394,7 +6394,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 880897700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
         m_MethodName: LoadLevel
         m_Mode: 1
@@ -6426,8 +6426,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 8ef31d7465161564b86401caa4113f2a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6501,7 +6501,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Three
+  m_text: Six
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7228,7 +7228,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 880897700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
         m_MethodName: DoNotPress
         m_Mode: 1
@@ -7441,12 +7441,12 @@ GameObject:
   - component: {fileID: 1816066507}
   - component: {fileID: 1816066506}
   m_Layer: 5
-  m_Name: How
+  m_Name: Should
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1816066505
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7471,7 +7471,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 25, y: -50}
-  m_SizeDelta: {x: 75, y: 50}
+  m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1816066506
 MonoBehaviour:
@@ -7517,7 +7517,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 880897700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
         m_MethodName: LoadLevel
         m_Mode: 1
@@ -7549,8 +7549,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 8ef31d7465161564b86401caa4113f2a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -7774,7 +7774,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A
+  m_text: D
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7939,12 +7939,12 @@ GameObject:
   - component: {fileID: 2143174712}
   - component: {fileID: 2143174711}
   m_Layer: 5
-  m_Name: C
+  m_Name: F
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2143174710
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8009,7 +8009,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 880897700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
         m_MethodName: LoadLevel
         m_Mode: 1
@@ -8041,8 +8041,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 8ef31d7465161564b86401caa4113f2a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
