@@ -7,75 +7,112 @@ using UnityEngine.SceneManagement;
 public class Winter : MonoBehaviour
 {
     // Map GameObjects for UnlockIfCleared()
-    [SerializeField] GameObject buttonB;
-    [SerializeField] GameObject buttonC;
-    [SerializeField] GameObject buttonOne;
-    [SerializeField] GameObject buttonTwo;
-    [SerializeField] GameObject stars5;
-    [SerializeField] GameObject buttonThree;
-    [SerializeField] GameObject starThreeYes;
-    [SerializeField] GameObject buttonThats;
-    [SerializeField] GameObject starThatsYes;
-    [SerializeField] GameObject buttonHow;
-    [SerializeField] GameObject starHowGreenYes;
-    [SerializeField] GameObject starHowYellowYes;
-    [SerializeField] GameObject starHowRedYes;
-    [SerializeField] GameObject buttonEasy;
-    [SerializeField] GameObject starEasyGreenYes;
-    [SerializeField] GameObject starEasyYellowYes;
-    [SerializeField] GameObject starEasyRedYes;
-    [SerializeField] GameObject buttonLove;
-    [SerializeField] GameObject starLoveGreenYes;
-    [SerializeField] GameObject starLoveYellowYes;
-    [SerializeField] GameObject starLoveRedYes;
-    [SerializeField] GameObject buttonCan;
-    [SerializeField] GameObject starCanGreenYes;
-    [SerializeField] GameObject starCanYellowYes;
-    [SerializeField] GameObject starCanRedYes;
-    [SerializeField] GameObject buttonBe;
-    [SerializeField] GameObject starBeGreenYes;
-    [SerializeField] GameObject starBeYellowYes;
-    [SerializeField] GameObject starBeRedYes;
+    
+    [SerializeField] GameObject starDGreenYes;
+    [SerializeField] GameObject starDYellowYes;
+    [SerializeField] GameObject starDRedYes;
+    [SerializeField] GameObject buttonE;
+    [SerializeField] GameObject starEGreenYes;
+    [SerializeField] GameObject starEYellowYes;
+    [SerializeField] GameObject starERedYes;
+    [SerializeField] GameObject buttonF;
+    [SerializeField] GameObject starFGreenYes;
+    [SerializeField] GameObject starFYellowYes;
+    [SerializeField] GameObject starFRedYes;
+    [SerializeField] GameObject buttonFour;
+    [SerializeField] GameObject starFourGreenYes;
+    [SerializeField] GameObject starFourYellowYes;
+    [SerializeField] GameObject starFourRedYes;
+    [SerializeField] GameObject buttonFive;
+    [SerializeField] GameObject starFiveGreenYes;
+    [SerializeField] GameObject starFiveYellowYes;
+    [SerializeField] GameObject starFiveRedYes;
+    [SerializeField] GameObject buttonSix;
+    [SerializeField] GameObject starSixGreenYes;
+    [SerializeField] GameObject starSixYellowYes;
+    [SerializeField] GameObject starSixRedYes;
+    [SerializeField] GameObject buttonSquirrels;
+    [SerializeField] GameObject starSquirrelsGreenYes;
+    [SerializeField] GameObject starSquirrelsYellowYes;
+    [SerializeField] GameObject starSquirrelsRedYes;
+    [SerializeField] GameObject buttonShould;
+    [SerializeField] GameObject starShouldGreenYes;
+    [SerializeField] GameObject starShouldYellowYes;
+    [SerializeField] GameObject starShouldRedYes;
+    [SerializeField] GameObject buttonAll;
+    [SerializeField] GameObject starAllGreenYes;
+    [SerializeField] GameObject starAllYellowYes;
+    [SerializeField] GameObject starAllRedYes;
+    [SerializeField] GameObject buttonSuck;
+    [SerializeField] GameObject starSuckGreenYes;
+    [SerializeField] GameObject starSuckYellowYes;
+    [SerializeField] GameObject starSuckRedYes;
+    [SerializeField] GameObject buttonSome;
+    [SerializeField] GameObject starSomeGreenYes;
+    [SerializeField] GameObject starSomeYellowYes;
+    [SerializeField] GameObject starSomeRedYes;
+    [SerializeField] GameObject buttonNuts;
+    [SerializeField] GameObject starNutsGreenYes;
+    [SerializeField] GameObject starNutsYellowYes;
+    [SerializeField] GameObject starNutsRedYes;
     [SerializeField] GameObject newLevelText;
 
     // Variables for UnlockLetterIfCleared
-    [SerializeField] GameObject letterLevelSelect;
-    private bool letterLevelSelectYes;
+    [SerializeField] GameObject letterWinter;
+    private bool letterWinterYes;
 
     // Start is called before the first frame update
     void Start()
     {
         // If levels and stars are cleared, set GameObjects active
-        UnlockIfCleared("A", buttonB);
-        UnlockIfCleared("B", buttonC);
-        UnlockIfCleared("C", buttonOne);
-        UnlockIfCleared("One", buttonTwo);
-        UnlockIfCleared("Two", stars5);
-        UnlockIfCleared("Two", buttonThree);
-        UnlockIfCleared("ThreeStarGreen", starThreeYes);
-        UnlockIfCleared("Three", buttonThats);
-        UnlockIfCleared("ThatsStarRed", starThatsYes);
-        UnlockIfCleared("Thats", buttonHow);
-        UnlockIfCleared("HowStarGreen", starHowGreenYes);
-        UnlockIfCleared("HowStarYellow", starHowYellowYes);
-        UnlockIfCleared("HowStarRed", starHowRedYes);
-        UnlockIfCleared("How", buttonEasy);
-        UnlockIfCleared("EasyStarGreen", starEasyGreenYes);
-        UnlockIfCleared("EasyStarYellow", starEasyYellowYes);
-        UnlockIfCleared("EasyStarRed", starEasyRedYes);
-        UnlockIfCleared("Easy", buttonLove);
-        UnlockIfCleared("LoveStarGreen", starLoveGreenYes);
-        UnlockIfCleared("LoveStarYellow", starLoveYellowYes);
-        UnlockIfCleared("LoveStarRed", starLoveRedYes);
-        UnlockIfCleared("Love", buttonCan);
-        UnlockIfCleared("CanStarGreen", starCanGreenYes);
-        UnlockIfCleared("CanStarYellow", starCanYellowYes);
-        UnlockIfCleared("CanStarRed", starCanRedYes);
-        UnlockIfCleared("Can", buttonBe);
-        UnlockIfCleared("BeStarGreen", starBeGreenYes);
-        UnlockIfCleared("BeStarYellow", starBeYellowYes);
-        UnlockIfCleared("BeStarRed", starBeRedYes);
-        UnlockIfCleared("Be", newLevelText);
+        UnlockIfCleared("DStarGreen", starDGreenYes);
+        UnlockIfCleared("DStarYellow", starDYellowYes);
+        UnlockIfCleared("DStarRed", starDRedYes);
+        UnlockIfCleared("D", buttonE);
+        UnlockIfCleared("EStarGreen", starEGreenYes);
+        UnlockIfCleared("EStarYellow", starEYellowYes);
+        UnlockIfCleared("EStarRed", starERedYes);
+        UnlockIfCleared("E", buttonF);
+        UnlockIfCleared("FStarGreen", starFGreenYes);
+        UnlockIfCleared("FStarYellow", starFYellowYes);
+        UnlockIfCleared("FStarRed", starFRedYes);
+        UnlockIfCleared("F", buttonFour);
+        UnlockIfCleared("FourStarGreen", starFourGreenYes);
+        UnlockIfCleared("FourStarYellow", starFourYellowYes);
+        UnlockIfCleared("FourStarRed", starFourRedYes);
+        UnlockIfCleared("Four", buttonFive);
+        UnlockIfCleared("FiveStarGreen", starFiveGreenYes);
+        UnlockIfCleared("FiveStarYellow", starFiveYellowYes);
+        UnlockIfCleared("FiveStarRed", starFiveRedYes);
+        UnlockIfCleared("Five", buttonSix);
+        UnlockIfCleared("SixStarGreen", starSixGreenYes);
+        UnlockIfCleared("SixStarYellow", starSixYellowYes);
+        UnlockIfCleared("SixStarRed", starSixRedYes);
+        UnlockIfCleared("Six", buttonSquirrels);
+        UnlockIfCleared("SquirrelsStarGreen", starSquirrelsGreenYes);
+        UnlockIfCleared("SquirrelsStarYellow", starSquirrelsYellowYes);
+        UnlockIfCleared("SquirrelsStarRed", starSquirrelsRedYes);
+        UnlockIfCleared("Squirrels", buttonShould);
+        UnlockIfCleared("ShouldStarGreen", starShouldGreenYes);
+        UnlockIfCleared("ShouldStarYellow", starShouldYellowYes);
+        UnlockIfCleared("ShouldStarRed", starShouldRedYes);
+        UnlockIfCleared("Should", buttonAll);
+        UnlockIfCleared("AllStarGreen", starAllGreenYes);
+        UnlockIfCleared("AllStarYellow", starAllYellowYes);
+        UnlockIfCleared("AllStarRed", starAllRedYes);
+        UnlockIfCleared("All", buttonSuck);
+        UnlockIfCleared("SuckStarGreen", starSuckGreenYes);
+        UnlockIfCleared("SuckStarYellow", starSuckYellowYes);
+        UnlockIfCleared("SuckStarRed", starSuckRedYes);
+        UnlockIfCleared("Suck", buttonSome);
+        UnlockIfCleared("SomeStarGreen", starSomeGreenYes);
+        UnlockIfCleared("SomeStarYellow", starSomeYellowYes);
+        UnlockIfCleared("SomeStarRed", starSomeRedYes);
+        UnlockIfCleared("Some", buttonNuts);
+        UnlockIfCleared("NutsStarGreen", starNutsGreenYes);
+        UnlockIfCleared("NutsStarYellow", starNutsYellowYes);
+        UnlockIfCleared("NutsStarRed", starNutsRedYes);
+        UnlockIfCleared("Nuts", newLevelText);
 
         // If all stars are cleared, unlock Letter
         UnlockLetterIfCleared();
@@ -109,73 +146,111 @@ public class Winter : MonoBehaviour
     private void UnlockLetterIfCleared()
     {
         // If letter has been cleared, set it active
-        letterLevelSelectYes = (PlayerPrefs.GetInt("LevelSelectLetter") != 0);
-        if (letterLevelSelectYes)
-        { letterLevelSelect.SetActive(true); }
+        letterWinterYes = (PlayerPrefs.GetInt("WinterLetter") != 0);
+        if (letterWinterYes)
+        { letterWinter.SetActive(true); }
 
         // If letter not clear, check if all stars collected
         else if (
-            PlayerPrefs.GetInt("ThreeStarGreen") != 0 &&
-            PlayerPrefs.GetInt("ThatsStarRed") != 0 &&
-            PlayerPrefs.GetInt("HowStarGreen") != 0 &&
-            PlayerPrefs.GetInt("HowStarYellow") != 0 &&
-            PlayerPrefs.GetInt("HowStarRed") != 0 &&
-            PlayerPrefs.GetInt("EasyStarGreen") != 0 &&
-            PlayerPrefs.GetInt("EasyStarYellow") != 0 &&
-            PlayerPrefs.GetInt("EasyStarRed") != 0 &&
-            PlayerPrefs.GetInt("LoveStarGreen") != 0 &&
-            PlayerPrefs.GetInt("LoveStarYellow") != 0 &&
-            PlayerPrefs.GetInt("LoveStarRed") != 0 &&
-            PlayerPrefs.GetInt("CanStarGreen") != 0 &&
-            PlayerPrefs.GetInt("CanStarYellow") != 0 &&
-            PlayerPrefs.GetInt("CanStarRed") != 0 &&
-            PlayerPrefs.GetInt("BeStarGreen") != 0 &&
-            PlayerPrefs.GetInt("BeStarYellow") != 0 &&
-            PlayerPrefs.GetInt("BeStarRed") != 0
+            PlayerPrefs.GetInt("DStarGreen") != 0 &&
+            PlayerPrefs.GetInt("DStarYellow") != 0 &&
+            PlayerPrefs.GetInt("DStarRed") != 0 &&
+            PlayerPrefs.GetInt("EStarGreen") != 0 &&
+            PlayerPrefs.GetInt("EStarYellow") != 0 &&
+            PlayerPrefs.GetInt("EStarRed") != 0 &&
+            PlayerPrefs.GetInt("FStarGreen") != 0 &&
+            PlayerPrefs.GetInt("FStarYellow") != 0 &&
+            PlayerPrefs.GetInt("FStarRed") != 0 &&
+            PlayerPrefs.GetInt("FourStarGreen") != 0 &&
+            PlayerPrefs.GetInt("FourStarYellow") != 0 &&
+            PlayerPrefs.GetInt("FourStarRed") != 0 &&
+            PlayerPrefs.GetInt("FiveStarGreen") != 0 &&
+            PlayerPrefs.GetInt("FiveStarYellow") != 0 &&
+            PlayerPrefs.GetInt("FiveStarRed") != 0 &&
+            PlayerPrefs.GetInt("SixStarGreen") != 0 &&
+            PlayerPrefs.GetInt("SixStarYellow") != 0 &&
+            PlayerPrefs.GetInt("SixStarRed") != 0 &&
+            PlayerPrefs.GetInt("SquirrelsStarGreen") != 0 &&
+            PlayerPrefs.GetInt("SquirrelsStarYellow") != 0 &&
+            PlayerPrefs.GetInt("SquirrelsStarRed") != 0 &&
+            PlayerPrefs.GetInt("ShouldStarGreen") != 0 &&
+            PlayerPrefs.GetInt("ShouldStarYellow") != 0 &&
+            PlayerPrefs.GetInt("ShouldStarRed") != 0 &&
+            PlayerPrefs.GetInt("AllStarGreen") != 0 &&
+            PlayerPrefs.GetInt("AllStarYellow") != 0 &&
+            PlayerPrefs.GetInt("AllStarRed") != 0 &&
+            PlayerPrefs.GetInt("SuckStarGreen") != 0 &&
+            PlayerPrefs.GetInt("SuckStarYellow") != 0 &&
+            PlayerPrefs.GetInt("SuckStarRed") != 0 &&
+            PlayerPrefs.GetInt("SomeStarGreen") != 0 &&
+            PlayerPrefs.GetInt("SomeStarYellow") != 0 &&
+            PlayerPrefs.GetInt("SomeStarRed") != 0 &&
+            PlayerPrefs.GetInt("NutsStarGreen") != 0 &&
+            PlayerPrefs.GetInt("NutsStarYellow") != 0 &&
+            PlayerPrefs.GetInt("NutsStarRed") != 0
         )
         // If all stars, unlock Letter
         {
-            PlayerPrefs.SetInt("LevelSelectLetter", 1);
-            letterLevelSelect.SetActive(true);
+            PlayerPrefs.SetInt("WinterLetter", 1);
+            letterWinter.SetActive(true);
         }
     }
 
-    // If do not pressed, destroy all level select data and reload
+    // If do not pressed, destroy all level data and reload
     public void DoNotPress()
     {
-        // Destroy all level select data
-        PlayerPrefs.SetInt("A", 0);
-        PlayerPrefs.SetInt("B", 0);
-        PlayerPrefs.SetInt("C", 0);
-        PlayerPrefs.SetInt("One", 0);
-        PlayerPrefs.SetInt("Two", 0);
-        PlayerPrefs.SetInt("ThreeStarGreen", 0);
-        PlayerPrefs.SetInt("Three", 0);
-        PlayerPrefs.SetInt("ThatsStarRed", 0);
-        PlayerPrefs.SetInt("Thats", 0);
-        PlayerPrefs.SetInt("HowStarGreen", 0);
-        PlayerPrefs.SetInt("HowStarYellow", 0);
-        PlayerPrefs.SetInt("HowStarRed", 0);
-        PlayerPrefs.SetInt("How", 0);
-        PlayerPrefs.SetInt("EasyStarGreen", 0);
-        PlayerPrefs.SetInt("EasyStarYellow", 0);
-        PlayerPrefs.SetInt("EasyStarRed", 0);
-        PlayerPrefs.SetInt("Easy", 0);
-        PlayerPrefs.SetInt("LoveStarGreen", 0);
-        PlayerPrefs.SetInt("LoveStarYellow", 0);
-        PlayerPrefs.SetInt("LoveStarRed", 0);
-        PlayerPrefs.SetInt("Love", 0);
-        PlayerPrefs.SetInt("CanStarGreen", 0);
-        PlayerPrefs.SetInt("CanStarYellow", 0);
-        PlayerPrefs.SetInt("CanStarRed", 0);
-        PlayerPrefs.SetInt("Can", 0);
-        PlayerPrefs.SetInt("BeStarGreen", 0);
-        PlayerPrefs.SetInt("BeStarYellow", 0);
-        PlayerPrefs.SetInt("BeStarRed", 0);
-        PlayerPrefs.SetInt("Be", 0);
-        PlayerPrefs.SetInt("LevelSelectLetter", 0);
+        // Destroy all level data
+        PlayerPrefs.SetInt("DStarGreen", 0);
+        PlayerPrefs.SetInt("DStarYellow", 0);
+        PlayerPrefs.SetInt("DStarRed", 0);
+        PlayerPrefs.SetInt("D", 0);
+        PlayerPrefs.SetInt("EStarGreen", 0);
+        PlayerPrefs.SetInt("EStarYellow", 0);
+        PlayerPrefs.SetInt("EStarRed", 0);
+        PlayerPrefs.SetInt("E", 0);
+        PlayerPrefs.SetInt("FStarGreen", 0);
+        PlayerPrefs.SetInt("FStarYellow", 0);
+        PlayerPrefs.SetInt("FStarRed", 0);
+        PlayerPrefs.SetInt("F", 0);
+        PlayerPrefs.SetInt("FourStarGreen", 0);
+        PlayerPrefs.SetInt("FourStarYellow", 0);
+        PlayerPrefs.SetInt("FourStarRed", 0);
+        PlayerPrefs.SetInt("Four", 0);
+        PlayerPrefs.SetInt("FiveStarGreen", 0);
+        PlayerPrefs.SetInt("FiveStarYellow", 0);
+        PlayerPrefs.SetInt("FiveStarRed", 0);
+        PlayerPrefs.SetInt("Five", 0);
+        PlayerPrefs.SetInt("SixStarGreen", 0);
+        PlayerPrefs.SetInt("SixStarYellow", 0);
+        PlayerPrefs.SetInt("SixStarRed", 0);
+        PlayerPrefs.SetInt("Six", 0);
+        PlayerPrefs.SetInt("SquirrelsStarGreen", 0);
+        PlayerPrefs.SetInt("SquirrelsStarYellow", 0);
+        PlayerPrefs.SetInt("SquirrelsStarRed", 0);
+        PlayerPrefs.SetInt("Squirrels", 0);
+        PlayerPrefs.SetInt("ShouldStarGreen", 0);
+        PlayerPrefs.SetInt("ShouldStarYellow", 0);
+        PlayerPrefs.SetInt("ShouldStarRed", 0);
+        PlayerPrefs.SetInt("Should", 0);
+        PlayerPrefs.SetInt("AllStarGreen", 0);
+        PlayerPrefs.SetInt("AllStarYellow", 0);
+        PlayerPrefs.SetInt("AllStarRed", 0);
+        PlayerPrefs.SetInt("All", 0);
+        PlayerPrefs.SetInt("SuckStarGreen", 0);
+        PlayerPrefs.SetInt("SuckStarYellow", 0);
+        PlayerPrefs.SetInt("SuckStarRed", 0);
+        PlayerPrefs.SetInt("Suck", 0);
+        PlayerPrefs.SetInt("SomeStarGreen", 0);
+        PlayerPrefs.SetInt("SomeStarYellow", 0);
+        PlayerPrefs.SetInt("SomeStarRed", 0);
+        PlayerPrefs.SetInt("Some", 0);
+        PlayerPrefs.SetInt("NutsStarGreen", 0);
+        PlayerPrefs.SetInt("NutsStarYellow", 0);
+        PlayerPrefs.SetInt("NutsStarRed", 0);
+        PlayerPrefs.SetInt("Nuts", 0);
+        PlayerPrefs.SetInt("WinterLetter", 0);
 
         // Load Level Select
-        SceneManager.LoadScene("LevelSelect");
+        SceneManager.LoadScene("Winter");
     }
 }
