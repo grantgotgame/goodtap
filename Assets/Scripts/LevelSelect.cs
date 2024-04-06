@@ -37,6 +37,7 @@ public class LevelSelect : MonoBehaviour
     [SerializeField] GameObject starBeYellowYes;
     [SerializeField] GameObject starBeRedYes;
     [SerializeField] GameObject newLevelText;
+    [SerializeField] GameObject buttonWinter;
 
     // Variables for UnlockLetterIfCleared
     [SerializeField] GameObject letterLevelSelect;
@@ -76,6 +77,7 @@ public class LevelSelect : MonoBehaviour
         UnlockIfCleared("BeStarYellow", starBeYellowYes);
         UnlockIfCleared("BeStarRed", starBeRedYes);
         UnlockIfCleared("Be", newLevelText);
+        UnlockIfCleared("Be", buttonWinter);
 
         // If all stars are cleared, unlock Letter
         UnlockLetterIfCleared();
@@ -140,40 +142,11 @@ public class LevelSelect : MonoBehaviour
         }
     }
 
-    // If do not pressed, destroy all level select data and reload
+    // If do not pressed, destroy all progress and reload
     public void DoNotPress()
     {
-        // Destroy all level select data
-        PlayerPrefs.SetInt("A", 0);
-        PlayerPrefs.SetInt("B", 0);
-        PlayerPrefs.SetInt("C", 0);
-        PlayerPrefs.SetInt("One", 0);
-        PlayerPrefs.SetInt("Two", 0);
-        PlayerPrefs.SetInt("ThreeStarGreen", 0);
-        PlayerPrefs.SetInt("Three", 0);
-        PlayerPrefs.SetInt("ThatsStarRed", 0);
-        PlayerPrefs.SetInt("Thats", 0);
-        PlayerPrefs.SetInt("HowStarGreen", 0);
-        PlayerPrefs.SetInt("HowStarYellow", 0);
-        PlayerPrefs.SetInt("HowStarRed", 0);
-        PlayerPrefs.SetInt("How", 0);
-        PlayerPrefs.SetInt("EasyStarGreen", 0);
-        PlayerPrefs.SetInt("EasyStarYellow", 0);
-        PlayerPrefs.SetInt("EasyStarRed", 0);
-        PlayerPrefs.SetInt("Easy", 0);
-        PlayerPrefs.SetInt("LoveStarGreen", 0);
-        PlayerPrefs.SetInt("LoveStarYellow", 0);
-        PlayerPrefs.SetInt("LoveStarRed", 0);
-        PlayerPrefs.SetInt("Love", 0);
-        PlayerPrefs.SetInt("CanStarGreen", 0);
-        PlayerPrefs.SetInt("CanStarYellow", 0);
-        PlayerPrefs.SetInt("CanStarRed", 0);
-        PlayerPrefs.SetInt("Can", 0);
-        PlayerPrefs.SetInt("BeStarGreen", 0);
-        PlayerPrefs.SetInt("BeStarYellow", 0);
-        PlayerPrefs.SetInt("BeStarRed", 0);
-        PlayerPrefs.SetInt("Be", 0);
-        PlayerPrefs.SetInt("LevelSelectLetter", 0);
+        // Destroy all progress
+        PlayerPrefs.DeleteAll();
 
         // Load Level Select
         SceneManager.LoadScene("LevelSelect");

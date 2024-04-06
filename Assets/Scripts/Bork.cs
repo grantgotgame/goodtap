@@ -17,7 +17,8 @@ public class Bork : MonoBehaviour
     [SerializeField] private GameObject doggoWithHeadphones;
     [SerializeField] private GameObject doggoWithBow;
     [SerializeField] private GameObject doNotPress;
-    private bool levelBeCleared = false;
+    [SerializeField] private GameObject borksText;
+    private bool levelBeCleared;
 
     // Start is called before the first frame update
     void Start()
@@ -89,7 +90,11 @@ public class Bork : MonoBehaviour
         // Mark doggo as borked
         PlayerPrefs.SetInt("BorkCount", PlayerPrefs.GetInt("BorkCount") + 1);
 
-        // If bork count hi enough, activate doNotPress
+        // If bork count high enough, activate borksText
+        if (PlayerPrefs.GetInt("BorkCount") > 2)
+        { borksText.SetActive(true); }
+
+        // If bork count high enough, activate doNotPress
         if (PlayerPrefs.GetInt("BorkCount") > 100)
         { doNotPress.SetActive(true); }
     }

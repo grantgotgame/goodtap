@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Winter : MonoBehaviour
 {
     // Map GameObjects for UnlockIfCleared()
-    
+
     [SerializeField] GameObject starDGreenYes;
     [SerializeField] GameObject starDYellowYes;
     [SerializeField] GameObject starDRedYes;
@@ -196,61 +196,13 @@ public class Winter : MonoBehaviour
         }
     }
 
-    // If do not pressed, destroy all level data and reload
+    // If do not pressed, destroy all progress and reload
     public void DoNotPress()
     {
-        // Destroy all level data
-        PlayerPrefs.SetInt("DStarGreen", 0);
-        PlayerPrefs.SetInt("DStarYellow", 0);
-        PlayerPrefs.SetInt("DStarRed", 0);
-        PlayerPrefs.SetInt("D", 0);
-        PlayerPrefs.SetInt("EStarGreen", 0);
-        PlayerPrefs.SetInt("EStarYellow", 0);
-        PlayerPrefs.SetInt("EStarRed", 0);
-        PlayerPrefs.SetInt("E", 0);
-        PlayerPrefs.SetInt("FStarGreen", 0);
-        PlayerPrefs.SetInt("FStarYellow", 0);
-        PlayerPrefs.SetInt("FStarRed", 0);
-        PlayerPrefs.SetInt("F", 0);
-        PlayerPrefs.SetInt("FourStarGreen", 0);
-        PlayerPrefs.SetInt("FourStarYellow", 0);
-        PlayerPrefs.SetInt("FourStarRed", 0);
-        PlayerPrefs.SetInt("Four", 0);
-        PlayerPrefs.SetInt("FiveStarGreen", 0);
-        PlayerPrefs.SetInt("FiveStarYellow", 0);
-        PlayerPrefs.SetInt("FiveStarRed", 0);
-        PlayerPrefs.SetInt("Five", 0);
-        PlayerPrefs.SetInt("SixStarGreen", 0);
-        PlayerPrefs.SetInt("SixStarYellow", 0);
-        PlayerPrefs.SetInt("SixStarRed", 0);
-        PlayerPrefs.SetInt("Six", 0);
-        PlayerPrefs.SetInt("SquirrelsStarGreen", 0);
-        PlayerPrefs.SetInt("SquirrelsStarYellow", 0);
-        PlayerPrefs.SetInt("SquirrelsStarRed", 0);
-        PlayerPrefs.SetInt("Squirrels", 0);
-        PlayerPrefs.SetInt("ShouldStarGreen", 0);
-        PlayerPrefs.SetInt("ShouldStarYellow", 0);
-        PlayerPrefs.SetInt("ShouldStarRed", 0);
-        PlayerPrefs.SetInt("Should", 0);
-        PlayerPrefs.SetInt("AllStarGreen", 0);
-        PlayerPrefs.SetInt("AllStarYellow", 0);
-        PlayerPrefs.SetInt("AllStarRed", 0);
-        PlayerPrefs.SetInt("All", 0);
-        PlayerPrefs.SetInt("SuckStarGreen", 0);
-        PlayerPrefs.SetInt("SuckStarYellow", 0);
-        PlayerPrefs.SetInt("SuckStarRed", 0);
-        PlayerPrefs.SetInt("Suck", 0);
-        PlayerPrefs.SetInt("SomeStarGreen", 0);
-        PlayerPrefs.SetInt("SomeStarYellow", 0);
-        PlayerPrefs.SetInt("SomeStarRed", 0);
-        PlayerPrefs.SetInt("Some", 0);
-        PlayerPrefs.SetInt("NutsStarGreen", 0);
-        PlayerPrefs.SetInt("NutsStarYellow", 0);
-        PlayerPrefs.SetInt("NutsStarRed", 0);
-        PlayerPrefs.SetInt("Nuts", 0);
-        PlayerPrefs.SetInt("WinterLetter", 0);
+        // Destroy all progress
+        PlayerPrefs.DeleteAll();
 
         // Load Level Select
-        SceneManager.LoadScene("Winter");
+        SceneManager.LoadScene("LevelSelect");
     }
 }
