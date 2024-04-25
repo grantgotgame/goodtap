@@ -88,15 +88,15 @@ public class D : MonoBehaviour
             //stepCounterMain++;
 
             // Set next buttons active
-            // if (stepCounterGreen < buttonsGreen.Length)
-            // {
-            //     buttonsGreen[stepCounterMain].SetActive(true);
-            //     buttonsGreen[stepCounterMain].GetComponent<Button>().interactable = true;
-            //     buttonsYellow[stepCounterMain].SetActive(true);
-            //     buttonsYellow[stepCounterMain].GetComponent<Button>().interactable = true;
-            //     buttonsRed[stepCounterMain].SetActive(true);
-            //     buttonsRed[stepCounterMain].GetComponent<Button>().interactable = true;
-            // }
+            if (stepCounterGreen < buttonsGreen.Length)
+            {
+                buttonsGreen[stepCounterGreen].SetActive(true);
+                //buttonsGreen[stepCounterMain].GetComponent<Button>().interactable = true;
+                //buttonsYellow[stepCounterMain].SetActive(true);
+                //buttonsYellow[stepCounterMain].GetComponent<Button>().interactable = true;
+                //buttonsRed[stepCounterMain].SetActive(true);
+                //buttonsRed[stepCounterMain].GetComponent<Button>().interactable = true;
+            }
 
             // If no more buttons, complete level
             //else
@@ -239,6 +239,6 @@ public class D : MonoBehaviour
         }
 
         // Load level select
-        SceneManager.LoadScene("LevelSelect");
+        SceneManager.LoadScene("Winter");
     }
 }
