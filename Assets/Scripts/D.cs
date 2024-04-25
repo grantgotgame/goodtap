@@ -230,7 +230,7 @@ public class D : MonoBehaviour
     IEnumerator WaitQuit()
     {
         //Wait some seconds
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2f);
 
         // If conditions are met, award red star
         if (stepCounterRed >= buttonsRed.Length)
