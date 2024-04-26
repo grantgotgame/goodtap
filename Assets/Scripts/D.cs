@@ -27,7 +27,7 @@ public class D : MonoBehaviour
 
     // Timer to track button countdowns
     private float timer = 10f;
-    private float timerInit = 0.75f;
+    private float timerInit = 1f;
 
     // String to track script name for CompleteLevel function
     private string scriptName;
