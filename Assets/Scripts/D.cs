@@ -131,8 +131,6 @@ public class D : MonoBehaviour
 
     public void ButtonsYellow()
     {
-        stepCounterYellow++;
-
         // Play audio
         buttonText = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<TMP_Text>().text;
         bork.BorkWord(buttonText);
@@ -141,39 +139,38 @@ public class D : MonoBehaviour
         DeactivateThisButton();
         //buttonsYellow[stepCounterMain].GetComponent<Button>().interactable = false;
         //buttonsGreen[stepCounterMain].GetComponent<Button>().interactable = false;
-        //buttonsRed[stepCounterMain].GetComponent<Button>().interactable = false;
+        buttonsRed[stepCounterMain].GetComponent<Button>().interactable = false;
 
-        StartCoroutine(IButtonsYellow());
+        // Reset timer
+        timer = timerInit;
+
+        // Increment step counters
+        stepCounterYellow++;
+        stepCounterMain++;
+
+        // Set next buttons active
+        if (stepCounterMain < buttonsYellow.Length)
+        {
+            buttonsYellow[stepCounterMain].SetActive(true);
+            //buttonsYellow[stepCounterYellow].GetComponent<Button>().interactable = true;
+            //buttonsGreen[stepCounterMain].SetActive(true);
+            buttonsRed[stepCounterMain].SetActive(true);
+        }
+
+        // If no more buttons, complete level
+        else
+        {
+            // Award yellow star if victory conditions are met
+            if (stepCounterGreen == 2 && stepCounterYellow == 4 && stepCounterRed == 1)
+            { PlayerPrefs.SetInt(scriptName + "StarYellow", 1); }
+
+            CompleteLevel();
+        }
     }
 
     IEnumerator IButtonsYellow()
     {
-        {
-            // Wait less than a second
-            yield return new WaitForSeconds(0.5f);
-
-            // Increment step counter
-            //stepCounterMain++;
-
-            // Set next buttons active
-            if (stepCounterYellow < buttonsYellow.Length)
-            {
-                buttonsYellow[stepCounterYellow].SetActive(true);
-                buttonsYellow[stepCounterYellow].GetComponent<Button>().interactable = true;
-                //buttonsGreen[stepCounterMain].SetActive(true);
-                //buttonsRed[stepCounterMain].SetActive(true);
-            }
-
-            // If no more buttons, complete level
-            else
-            {
-                // Award yellow star if victory conditions are met
-                if (stepCounterYellow == buttonsYellow.Length)
-                { PlayerPrefs.SetInt(scriptName + "StarYellow", 1); }
-
-                CompleteLevel();
-            }
-        }
+        return null;
     }
 
     public void ButtonsRed()
@@ -190,7 +187,7 @@ public class D : MonoBehaviour
         // Reset timer
         timer = timerInit;
 
-        // Increment step counter
+        // Increment step counters
         stepCounterRed++;
         stepCounterMain++;
 
