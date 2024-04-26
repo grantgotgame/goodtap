@@ -176,11 +176,12 @@ public class Be : MonoBehaviour
     IEnumerator IButtonsRed()
     {
         {
-            // Wait less than a second
-            yield return new WaitForSeconds(0.25f);
-
             // Increment step counter
             stepCounterRed++;
+
+            // Wait
+            yield return new WaitForSeconds(3f);
+
             //stepCounterMain++;
 
             // Set next button active
