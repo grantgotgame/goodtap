@@ -32,8 +32,9 @@ public class Bork : MonoBehaviour
         // Check if level Be has been cleared
         levelBeCleared = (PlayerPrefs.GetInt("Be") != 0);
 
-        // Randomize headphones on Level Select screen
-        if (SceneManager.GetActiveScene().name == "LevelSelect")
+        // Randomize headphones on Level Select screens
+        if (SceneManager.GetActiveScene().name == "LevelSelect" ||
+        SceneManager.GetActiveScene().name == "Winter")
         { RandomizeHeadphones(); }
     }
 
