@@ -68,7 +68,7 @@ public class Winter : MonoBehaviour
         UnlockIfCleared("DStarGreen", starDGreenYes);
         UnlockIfCleared("DStarYellow", starDYellowYes);
         UnlockIfCleared("DStarRed", starDRedYes);
-        UnlockIfCleared("D", buttonE);
+        //UnlockIfCleared("D", buttonE);
         UnlockIfCleared("EStarGreen", starEGreenYes);
         UnlockIfCleared("EStarYellow", starEYellowYes);
         UnlockIfCleared("EStarRed", starERedYes);
@@ -112,7 +112,7 @@ public class Winter : MonoBehaviour
         UnlockIfCleared("NutsStarGreen", starNutsGreenYes);
         UnlockIfCleared("NutsStarYellow", starNutsYellowYes);
         UnlockIfCleared("NutsStarRed", starNutsRedYes);
-        UnlockIfCleared("Nuts", newLevelText);
+        UnlockIfCleared("D", newLevelText);
 
         // If all stars are cleared, unlock Letter
         UnlockLetterIfCleared();

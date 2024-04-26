@@ -23,7 +23,11 @@ public class D : MonoBehaviour
     private int stepCounterGreen = 0;
     private int stepCounterYellow = 0;
     private int stepCounterRed = 0;
-    //private int stepCounterMain = 0;
+    private int stepCounterMain = 0;
+
+    // Timer to track button countdowns
+    private float timer = 10f;
+    private float timerInit = 0.75f;
 
     // String to track script name for CompleteLevel function
     private string scriptName;
@@ -33,7 +37,6 @@ public class D : MonoBehaviour
     private TMP_Text m_TextComponent;
     private Transform m_Transform;
     private string buttonText;
-
 
     // Start is called before the first frame update
     void Start()
@@ -52,6 +55,20 @@ public class D : MonoBehaviour
     void Update()
     {
 
+    }
+
+    // FixedUpdate is called at a set interval
+    void FixedUpdate()
+    {
+        // Reduce timer
+        timer -= Time.deltaTime;
+
+        // Roll back buttons when timer expires
+        if (timer < 0f)
+        {
+            RollBackButtons();
+            timer = timerInit;
+        }
     }
 
     /*
@@ -167,36 +184,59 @@ public class D : MonoBehaviour
 
         // Deactivate buttons
         DeactivateThisButton();
-        //buttonsRed[stepCounterMain].GetComponent<Button>().interactable = false;
+        buttonsYellow[stepCounterMain].GetComponent<Button>().interactable = false;
         //buttonsGreen[stepCounterMain].GetComponent<Button>().interactable = false;
 
-        StartCoroutine(IButtonsRed());
+        // Reset timer
+        timer = timerInit;
+
+        // Increment step counter
+        stepCounterRed++;
+        stepCounterMain++;
+
+        // Set next button active
+        if (stepCounterMain < buttonsRed.Length)
+        {
+            buttonsRed[stepCounterMain].SetActive(true);
+            //buttonsRed[stepCounterMain].GetComponent<Button>().interactable = true;
+            buttonsYellow[stepCounterMain].SetActive(true);
+            //buttonsYellow[stepCounterMain].GetComponent<Button>().interactable = true;
+            //buttonsGreen[stepCounterMain].SetActive(true);
+            //buttonsGreen[stepCounterMain].GetComponent<Button>().interactable = true;
+        }
+
+        // Complete level if no more buttons
+        else
+        {
+            // If conditions are met, award red star
+            if (stepCounterRed >= buttonsRed.Length)
+            {
+                PlayerPrefs.SetInt(scriptName + "StarRed", 1);
+            }
+            CompleteLevel();
+        }
+
+        // StartCoroutine(IButtonsRed());
     }
 
     IEnumerator IButtonsRed()
     {
         {
-            // Wait less than a second
-            yield return new WaitForSeconds(0.25f);
-
-            // Increment step counter
-            stepCounterRed++;
-            //stepCounterMain++;
-
-            // Set next button active
-            // if (stepCounterMain < buttonsRed.Length)
-            // {
-            //     //buttonsRed[stepCounterMain].SetActive(true);
-            //     //buttonsRed[stepCounterMain].GetComponent<Button>().interactable = true;
-            //     buttonsYellow[stepCounterMain].SetActive(true);
-            //     //buttonsYellow[stepCounterMain].GetComponent<Button>().interactable = true;
-            //     //buttonsGreen[stepCounterMain].SetActive(true);
-            //     //buttonsGreen[stepCounterMain].GetComponent<Button>().interactable = true;
-            // }
-
-            // Start countdown
-            CompleteLevel();
+            return null;
         }
+    }
+
+    // Roll back buttons
+    private void RollBackButtons()
+    {
+        buttonsRed[stepCounterMain].SetActive(false);
+        buttonsYellow[stepCounterMain].SetActive(false);
+        stepCounterRed--;
+        stepCounterMain--;
+        buttonsRed[stepCounterMain].SetActive(true);
+        buttonsRed[stepCounterMain].GetComponent<Button>().interactable = true;
+        buttonsYellow[stepCounterMain].SetActive(true);
+        buttonsYellow[stepCounterMain].GetComponent<Button>().interactable = true;
     }
 
     public void ButtonsBlank()

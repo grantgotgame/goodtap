@@ -1488,7 +1488,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 554893839}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2105339025}
+        m_TargetAssemblyTypeName: D, Assembly-CSharp
+        m_MethodName: ButtonsYellow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &554893839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1677,7 +1689,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 577799389}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2105339025}
+        m_TargetAssemblyTypeName: D, Assembly-CSharp
+        m_MethodName: ButtonsYellow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &577799389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1798,7 +1822,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 598129120}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2105339025}
+        m_TargetAssemblyTypeName: D, Assembly-CSharp
+        m_MethodName: ButtonsRed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &598129120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2402,7 +2438,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 749917593}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2105339025}
+        m_TargetAssemblyTypeName: D, Assembly-CSharp
+        m_MethodName: ButtonsYellow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &749917593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3294,7 +3342,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1095778177}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2105339025}
+        m_TargetAssemblyTypeName: D, Assembly-CSharp
+        m_MethodName: ButtonsYellow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1095778177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3816,7 +3876,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1652831844}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2105339025}
+        m_TargetAssemblyTypeName: D, Assembly-CSharp
+        m_MethodName: ButtonsRed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1652831844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3937,7 +4009,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1665700350}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2105339025}
+        m_TargetAssemblyTypeName: D, Assembly-CSharp
+        m_MethodName: ButtonsRed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1665700350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4192,7 +4276,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1958875198}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2105339025}
+        m_TargetAssemblyTypeName: D, Assembly-CSharp
+        m_MethodName: ButtonsRed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1958875198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4313,7 +4409,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2005257778}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2105339025}
+        m_TargetAssemblyTypeName: D, Assembly-CSharp
+        m_MethodName: ButtonsRed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2005257778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4434,7 +4542,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2055832197}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2105339025}
+        m_TargetAssemblyTypeName: D, Assembly-CSharp
+        m_MethodName: ButtonsYellow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2055832197
 MonoBehaviour:
   m_ObjectHideFlags: 0
