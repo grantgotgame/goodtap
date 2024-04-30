@@ -66,7 +66,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7e3db4f50043c454482f39811a4e3fe1, type: 3}
   - {fileID: 8300000, guid: 68fa364a31d9f80498a9ffc5fb546e57, type: 3}
   b_for:
-  - {fileID: 8300000, guid: ef310feb0f438b24abe1cfcecfd9796f, type: 3}
+  - {fileID: 8300000, guid: f7ab0a0438c54a0438dc34ce7c2e5ae5, type: 3}
   b_golden:
   - {fileID: 8300000, guid: 19aae716eb06e1144bbb6744fa327fc5, type: 3}
   b_GOOD:
@@ -77,6 +77,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 73e7e52fee6544046a5687ca646a49fd, type: 3}
   - {fileID: 8300000, guid: 5410398e11436c3468a0fbcbf2e5d46f, type: 3}
   - {fileID: 8300000, guid: 28d5ebd7f5cbf964fb6269b14ce40ac6, type: 3}
+  b_green:
+  - {fileID: 8300000, guid: 9092f1c55ad6fac41b337fb8e4b1224a, type: 3}
   b_HARD:
   - {fileID: 8300000, guid: 91ef609c924630a4c8467c3d552265ef, type: 3}
   b_i:
@@ -170,12 +172,13 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 67ff20ff459fd4240ac4c94f5952ac90, type: 3}
   b_STARS:
   - {fileID: 8300000, guid: 9f33a65cd9b17c543aa0df5fa7cb6018, type: 3}
+  b_stars:
+  - {fileID: 8300000, guid: 114c7f6ed20460a48839f3234728ab34, type: 3}
   b_TAP:
   - {fileID: 8300000, guid: 266f782b6c4f686468fbf04566f0085e, type: 3}
   - {fileID: 8300000, guid: fc73dbc6bebaa1d46aa40228f022ef7b, type: 3}
   b_tap:
-  - {fileID: 8300000, guid: f7a00f33b431afc4baf72b1179e587ea, type: 3}
-  - {fileID: 8300000, guid: 0660eb3f179ab6741add279423b040b0, type: 3}
+  - {fileID: 8300000, guid: a0f0451994510df4b80696d5d2deaef2, type: 3}
   b_the:
   - {fileID: 8300000, guid: ba23bc29db1163740877705902498173, type: 3}
   - {fileID: 8300000, guid: 8845c1b2cad792146bb8621f76b72e36, type: 3}
