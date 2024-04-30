@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "audioData_", menuName = "Data/Audio Data")]
 public class AudioData : ScriptableObject
 {
-    // Map audio data words
+    // Map audio data words for Bork script
     [SerializeField] private AudioClip[] b_ALWAYS;
     public AudioClip[] B_ALWAYS => b_ALWAYS;
     [SerializeField] private AudioClip[] b_AND;
@@ -52,6 +52,8 @@ public class AudioData : ScriptableObject
     public AudioClip[] B_good => b_good;
     [SerializeField] private AudioClip[] b_GREEN;
     public AudioClip[] B_GREEN => b_GREEN;
+    [SerializeField] private AudioClip[] b_green;
+    public AudioClip[] B_green => b_green;
     [SerializeField] private AudioClip[] b_HARD;
     public AudioClip[] B_HARD => b_HARD;
     [SerializeField] private AudioClip[] b_i;
@@ -114,6 +116,8 @@ public class AudioData : ScriptableObject
     public AudioClip[] B_squirrels => b_squirrels;
     [SerializeField] private AudioClip[] b_STARS;
     public AudioClip[] B_STARS => b_STARS;
+    [SerializeField] private AudioClip[] b_stars;
+    public AudioClip[] B_stars => b_stars;
     [SerializeField] private AudioClip[] b_TAP;
     public AudioClip[] B_TAP => b_TAP;
     [SerializeField] private AudioClip[] b_tap;

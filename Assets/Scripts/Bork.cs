@@ -103,7 +103,7 @@ public class Bork : MonoBehaviour
     public void BorkWord(string word)
     {
 
-        // Map bork library - bork random sound
+        // Map bork library for AudioData - bork random sound
 
         if (word == "ALWAYS")
         {
@@ -235,6 +235,12 @@ public class Bork : MonoBehaviour
         {
             borkNumber = Random.Range(0, bork.B_GREEN.Length);
             audioSource.PlayOneShot(bork.B_GREEN[borkNumber]);
+        }
+
+        if (word == "green")
+        {
+            borkNumber = Random.Range(0, bork.B_green.Length);
+            audioSource.PlayOneShot(bork.B_green[borkNumber]);
         }
 
         if (word == "HARD")
@@ -421,6 +427,12 @@ public class Bork : MonoBehaviour
         {
             borkNumber = Random.Range(0, bork.B_STARS.Length);
             audioSource.PlayOneShot(bork.B_STARS[borkNumber]);
+        }
+
+        if (word == "stars")
+        {
+            borkNumber = Random.Range(0, bork.B_stars.Length);
+            audioSource.PlayOneShot(bork.B_stars[borkNumber]);
         }
 
         if (word == "TAP")
